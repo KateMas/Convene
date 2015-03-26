@@ -3,23 +3,17 @@
 @import "compass/utilities/general/clearfix";
 @import "bootstrap";
 @import "compass/utilities/sprites";
-
 //sprites
-
 //fonts
 @import "fonts/open-sans";
 @import "fonts/helvetica";
-
 //mixins
 @import "mixins/breakpoints";
 @import "mixins/user-select";
-
 //base
 @import "base";
-
 //widgets
 @import "widgets/header";
 @import "widgets/footer";
-
 //layouts
 @import "layouts/body";

@@ -7197,9 +7197,38 @@ button.close {
 }
 @font-face {
   font-family: "Helvetica Light";
-  src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.otf') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.woff') format('woff');
+  src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.otf?1427390063') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.svg?1427390063') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.ttf?1427390063') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.woff?1427390063') format('woff');
 }
 @font-face {
   font-family: "Helvetica Regular";
-  src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2') format('woff2');
+  src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot?1427390063') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg?1427390063') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf?1427390063') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff?1427390063') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2?1427390063') format('woff2');
+}
+.navbar-header {
+  padding-top: 47px;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border: none;
+}
+.navbar-default .navbar-nav {
+  padding-top: 47px;
+}
+.navbar-default .navbar-nav li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #061b2a;
+}
+
+.navbar-collapse {
+  border: none;
+}
+
+.navbar-toggle {
+  border: none;
 }

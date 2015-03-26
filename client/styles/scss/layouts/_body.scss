@@ -1,7 +1,7 @@
 body {
-	&.homepage {
-		@import "layouts/homepage/events";
-		@import "layouts/homepage/tweets";
-		@import "layouts/homepage/turn";
-	}	
+  &.homepage {
+    @import "layouts/homepage/events";
+    @import "layouts/homepage/tweets";
+    @import "layouts/homepage/turn";
+  }
 }
