@@ -7232,3 +7232,9 @@ button.close {
 .navbar-toggle {
   border: none;
 }
+body .container-background {
+  /* background-image: url(../../../client/images/background-container.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
