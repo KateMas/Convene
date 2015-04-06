@@ -7203,3 +7203,45 @@ button.close {
   font-family: "Helvetica Regular";
   src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2') format('woff2');
 }
+body.homepage .registration {
+  /* #titleContainer {
+  	display: inline-block;
+      width: 520px;		    
+      padding: 1px 0;
+      border-left: 30px solid #1769a4; 		    
+      line-height: 1.1; 
+      .indent { 
+  	    position: relative; 
+  	    left: -15px;
+  	    .heading {
+  		    background-color: #1769a4;
+  		    color: #00a3d0;
+  		    h2 {
+  			    display: inline; 
+  			    margin: 0; 
+  			    padding: 0;
+  			    background-color: #1769a4; 
+  			    font-family: "Helvetica Light";
+  			    font-size: 44px;
+  			    color: #fff; 	   						
+  			}	
+  		}
+  	}			
+  }  */
+}
+body.homepage .registration span {
+  display: block;
+  background-color: #1769a4;
+}
+body.homepage .registration a {
+  height: 38px;
+}
+body.homepage .registration a span {
+  width: 48px;
+  height: 38px;
+  background-color: #0ba4e2;
+}
+body.homepage .registration a span img {
+  width: 26px;
+  height: 21px;
+}
