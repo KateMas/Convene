@@ -7203,6 +7203,12 @@ button.close {
   font-family: "Helvetica Regular";
   src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2') format('woff2');
 }
+body .container-background {
+  background-image: url(../../../client/images/bg-header-monitor.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 body.homepage .registration {
   /* #titleContainer {
   	display: inline-block;
@@ -7228,20 +7234,39 @@ body.homepage .registration {
   		}
   	}			
   }  */
+  /* span {
+  	display: block;
+  	background-color: #1769a4;
+  } */
+  /* 	a {
+  	height: 38px;
+  	span {
+  		width: 48px;
+  		height: 38px;
+  		background-color: #0ba4e2;
+  		img {
+  			width: 26px;
+  			height: 21px;
+  		}
+  	}
+  } */
 }
-body.homepage .registration span {
-  display: block;
+body.homepage .registration .getting {
+  width: 600px;
+  height: 120px;
+}
+body.homepage .registration .getting h2 {
+  font-family: "Helvetica Light";
+  font-size: 44px;
+}
+body.homepage .registration .getting h2 span {
+  display: inline-block;
+}
+body.homepage .registration .getting h2 span span {
+  padding: 0.05em 0.25em;
+  margin: 0 -0.5em 0 0;
+}
+body.homepage .registration .getting h2 .heading span {
   background-color: #1769a4;
-}
-body.homepage .registration a {
-  height: 38px;
-}
-body.homepage .registration a span {
-  width: 48px;
-  height: 38px;
-  background-color: #0ba4e2;
-}
-body.homepage .registration a span img {
-  width: 26px;
-  height: 21px;
+  color: #ffffff;
 }

@@ -24,22 +24,44 @@
 				}
 			}			
 		}  */
-		span {
+		/* span {
 			display: block;
 			background-color: #1769a4;
-		}
-
-		a {
-			height: 38px;
+		} */
+		.getting {
+	width: 600px;
+	height: 120px;
+	 h2 {
+	 	font-family: "Helvetica Light";
+		font-size: 44px;
+		span {
+			display: inline-block;		
 			span {
-				width: 48px;
-				height: 38px;
-				background-color: #0ba4e2;
-				img {
-					width: 26px;
-					height: 21px;
-				}
+				 padding: 0.05em 0.25em;
+	   			 margin: 0 -0.5em 0 0;
 			}
 		}
+		.heading { 
+			span {
+				background-color: #1769a4;
+		    	color: #ffffff;
+	    	}
+		}
+		
+	}
+}	
+
+	/* 	a {
+		height: 38px;
+		span {
+			width: 48px;
+			height: 38px;
+			background-color: #0ba4e2;
+			img {
+				width: 26px;
+				height: 21px;
+			}
+		}
+	} */
 		
 	}
