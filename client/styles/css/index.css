@@ -7195,6 +7195,27 @@ button.close {
     display: none !important;
   }
 }
+.social-sprite, .social-at, .social-fc, .social-g, .social-twitter {
+  background-image: url('../../images/social-sb0b98f1037.png');
+  background-repeat: no-repeat;
+}
+
+.social-at {
+  background-position: 0 0;
+}
+
+.social-fc {
+  background-position: 0 -24px;
+}
+
+.social-g {
+  background-position: 0 -48px;
+}
+
+.social-twitter {
+  background-position: 0 -74px;
+}
+
 @font-face {
   font-family: "Helvetica Light";
   src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.otf') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.woff') format('woff');
@@ -7202,4 +7223,123 @@ button.close {
 @font-face {
   font-family: "Helvetica Regular";
   src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2') format('woff2');
+}
+header {
+  width: 100%;
+  padding-top: 40px;
+}
+header .nav-color {
+  min-height: 42px;
+  background-color: #ffffff;
+  border: none;
+}
+header .nav-color .container-header {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+header .nav-color .container-header .but-style {
+  margin: 0;
+  border: none;
+}
+header .nav-color .container-header .but-style:hover {
+  background-color: #ffffff;
+}
+header .nav-color .container-header .but-style:focus {
+  background-color: #ffffff;
+}
+header .nav-color .container-header .but-style .icon-color {
+  width: 37px;
+  height: 6px;
+  background-color: #1769a4;
+}
+header .nav-color .container-header .logo {
+  height: 42px;
+  padding: 0;
+  border: none;
+}
+header .nav-color .container-header .list {
+  border: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .nav-color .container-header .list ul li {
+    margin-right: 0;
+  }
+  header .nav-color .container-header .list ul li a {
+    color: #ffffff;
+    font-family: "Helvetica Light";
+    font-size: 40px;
+  }
+}
+header .nav-color .container-header .list ul li {
+  margin-right: 31px;
+}
+header .nav-color .container-header .list ul li:last-child {
+  margin-right: 0;
+}
+header .nav-color .container-header .list ul li a {
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #061b2a;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+header .nav-color .container-header .list ul li a:hover {
+  color: #1769a4;
+}
+
+body.homepage .tweets {
+  padding-top: 55px;
+  padding-bottom: 62px;
+  background-color: #186ba6;
+  background-image: url(../../../client/images/tweets/background-tweets.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+body.homepage .tweets h2 {
+  margin-top: 12px;
+  font-family: "Helvetica Light";
+  font-size: 24px;
+  color: #ffffff;
+}
+body.homepage .tweets .row figure:before, body.homepage .tweets .row figure:after {
+  content: " ";
+  display: table;
+}
+body.homepage .tweets .row figure:after {
+  clear: both;
+}
+body.homepage .tweets .row figure img {
+  float: left;
+}
+body.homepage .tweets .row figure figcaption {
+  float: right;
+  width: 170px;
+  height: 108px;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #676767;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 0 1px #d4d4d4 inset;
+  box-shadow: 0 0 0 1px #d4d4d4 inset;
+}
+body.homepage .tweets .row figure figcaption p {
+  padding: 8px 15px;
+  text-align: left;
+}
+body.homepage .tweets .first-line {
+  margin-top: 28px;
+}
+body.homepage .tweets .second-line {
+  margin-top: 32px;
 }

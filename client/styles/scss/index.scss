@@ -5,6 +5,9 @@
 @import "compass/utilities/sprites";
 
 //sprites
+@import "social/*.png";
+@include all-social-sprites;
+
 
 //fonts
 @import "fonts/open-sans";

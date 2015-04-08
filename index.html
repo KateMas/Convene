@@ -5,11 +5,34 @@
 	<meta charset="UTF-8">	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="client/styles/css/index.css">	
+	<script src="client/js/jquery-2.1.3.min.js"></script>
+    <script src="client/js/bootstrap.min.js"></script>
 </head>
 <body class="homepage">
 	<div class="container-background">
 		<header>
-			
+			<nav class="navbar navbar-default nav-color">
+ 				<div class="container container-header">         
+	    			<div class=" navbar-header">
+					     <button type="button" class="navbar-toggle collapsed but-style" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar icon-color"></span>
+						    <span class="icon-bar icon-color"></span>
+						    <span class="icon-bar icon-color"></span>
+					     </button>
+					     <a class="navbar-brand logo" href="/">
+					     	<img src="client/images/header/header-convene.png" alt="/">
+					     </a>
+					</div>
+				    <div class="collapse navbar-collapse list" id="bs-example-navbar-collapse-1">          
+				      	<ul class="nav navbar-nav navbar-right">
+					        <li><a href="javascript:void(0)">About Convene</a></li>
+							<li><a href="javascript:void(0)">Take the Tour</a></li>
+							<li><a href="javascript:void(0)">Contact</a></li>
+						</ul>
+				    </div>	 
+			    </div> 	      
+			</nav>
 		</header>
 		<div class="registration container">
 			<div class="row">
@@ -33,10 +56,62 @@
 			<p>Access the history of every meeting, contact, and commitment to know what happened, what's next and why it matters.</p>
 		</section>
 		<section class="tweets">
-			<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
-			<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
-			<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
-			<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
+			<div class="container">
+				<img class="twit" src="client/images/tweets/twit.png" alt="/"/>
+				<h2>Tweets about Convene</h2>
+				<div class="row first-line">
+					<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
+						</figcaption>
+					</figure>
+					<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
+						</figcaption>
+					</figure>
+					<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
+						</figcaption>
+					</figure>
+					<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="row second-line">
+					<figure class="col-lg-3 col-md-4 col-sm-6 hidden-xs">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
+						</figcaption>
+					</figure>
+					<figure class="col-lg-3 col-md-4 col-sm-6 hidden-xs">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
+						</figcaption>
+					</figure>
+					<figure class="col-lg-3 col-md-4 col-sm-6 hidden-xs">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
+						</figcaption>
+					</figure>
+					<figure class="col-lg-3 col-md-4 col-sm-6 hidden-xs">
+						<img src="client/images/tweets/photo.png" alt="/"/>
+						<figcaption>
+							<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>			
 		</section>
 		<section class="tour"></section>
 	</main>

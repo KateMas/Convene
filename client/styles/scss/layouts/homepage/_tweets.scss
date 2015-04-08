@@ -1,0 +1,45 @@
+.tweets {
+	padding-top: 55px;
+	padding-bottom: 62px;
+	background-color: #186ba6;
+	background-image: url(../../../client/images/tweets/background-tweets.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	h2 {
+		margin-top: 12px;
+		font-family: "Helvetica Light";
+		font-size: 24px;
+		color: #ffffff;
+	}	
+	.row {
+		figure {
+			@include clearfix;
+			img {
+				float: left;
+			}
+			figcaption {
+				float: right;
+				width: 170px;
+				height: 108px;				
+				background-color: #ffffff;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 13px;
+				font-weight: 400;
+				color: #676767;
+				@include border-radius(3px);
+				@include box-shadow (0 0 0 1px #d4d4d4 inset);
+				p {
+					padding: 8px 15px;
+					text-align: left;
+				}
+			}
+		}
+	}
+	.first-line {
+		margin-top: 28px;
+	}
+	.second-line {
+		margin-top: 32px;			
+	}
+}
