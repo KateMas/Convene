@@ -7233,50 +7233,46 @@ header .nav-color {
   background-color: #ffffff;
   border: none;
 }
-header .nav-color .container-header {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-header .nav-color .container-header .but-style {
+header .nav-color .but-style {
   margin: 0;
   border: none;
 }
-header .nav-color .container-header .but-style:hover {
+header .nav-color .but-style:hover {
   background-color: #ffffff;
 }
-header .nav-color .container-header .but-style:focus {
+header .nav-color .but-style:focus {
   background-color: #ffffff;
 }
-header .nav-color .container-header .but-style .icon-color {
+header .nav-color .but-style .icon-color {
   width: 37px;
   height: 6px;
-  background-color: #1769a4;
+  background-color: #55a4da;
 }
-header .nav-color .container-header .logo {
+header .nav-color .logo {
   height: 42px;
-  padding: 0;
+  padding: 0 15px;
   border: none;
 }
-header .nav-color .container-header .list {
+header .nav-color .list {
   border: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  header .nav-color .container-header .list ul li {
+  header .nav-color .list ul li {
     margin-right: 0;
   }
-  header .nav-color .container-header .list ul li a {
+  header .nav-color .list ul li a {
     color: #ffffff;
     font-family: "Helvetica Light";
     font-size: 40px;
   }
 }
-header .nav-color .container-header .list ul li {
+header .nav-color .list ul li {
   margin-right: 31px;
 }
-header .nav-color .container-header .list ul li:last-child {
+header .nav-color .list ul li:last-child {
   margin-right: 0;
 }
-header .nav-color .container-header .list ul li a {
+header .nav-color .list ul li a {
   padding: 0px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -7289,10 +7285,34 @@ header .nav-color .container-header .list ul li a {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-header .nav-color .container-header .list ul li a:hover {
+header .nav-color .list ul li a:hover {
   color: #1769a4;
 }
 
+/* .block {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px 0 0;
+    border-radius: 3px;
+	&::after {
+	    width: 0;
+	    height: 0;
+	    content:' ';
+	    position: absolute;
+	}	
+}
+.arrow-left {
+    background-color: #DBA901;
+	&::after {
+	    top: 15px;
+	    left: -10px;
+	    border-width: 10px 10px 10px 0;
+	    border-style: solid;
+	    border-color: transparent #DBA901 transparent transparent;
+	}
+} */
 body.homepage .tweets {
   padding-top: 55px;
   padding-bottom: 62px;
@@ -7315,11 +7335,7 @@ body.homepage .tweets .row figure:before, body.homepage .tweets .row figure:afte
 body.homepage .tweets .row figure:after {
   clear: both;
 }
-body.homepage .tweets .row figure img {
-  float: left;
-}
 body.homepage .tweets .row figure figcaption {
-  float: right;
   width: 170px;
   height: 108px;
   background-color: #ffffff;
@@ -7334,12 +7350,57 @@ body.homepage .tweets .row figure figcaption {
   box-shadow: 0 0 0 1px #d4d4d4 inset;
 }
 body.homepage .tweets .row figure figcaption p {
+  margin: 0;
   padding: 8px 15px;
   text-align: left;
 }
-body.homepage .tweets .first-line {
+body.homepage .tweets .row figure .block {
+  position: relative;
+  display: inline-block;
+}
+body.homepage .tweets .row figure .block::after {
+  width: 0;
+  height: 0;
+  content: ' ';
+  position: absolute;
+}
+body.homepage .tweets .first-line figure {
   margin-top: 28px;
 }
-body.homepage .tweets .second-line {
+body.homepage .tweets .first-line figure img {
+  float: left;
+  -webkit-box-shadow: 0 2px 2px 2px rgba(15, 69, 108, 0.35);
+  box-shadow: 0 2px 2px 2px rgba(15, 69, 108, 0.35);
+}
+body.homepage .tweets .first-line figure figcaption {
+  float: right;
+}
+body.homepage .tweets .first-line figure .arrow-left {
+  background-color: #ffffff;
+}
+body.homepage .tweets .first-line figure .arrow-left::after {
+  top: 26px;
+  left: -9px;
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent #ffffff transparent transparent;
+}
+body.homepage .tweets .second-line figure {
   margin-top: 32px;
+}
+body.homepage .tweets .second-line figure img {
+  float: right;
+}
+body.homepage .tweets .second-line figure figcaption {
+  float: left;
+}
+body.homepage .tweets .second-line figure .arrow-right {
+  background-color: #ffffff;
+}
+body.homepage .tweets .second-line figure .arrow-right::after {
+  top: 15px;
+  right: -9px;
+  border-width: 10px 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ffffff;
 }
