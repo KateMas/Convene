@@ -1,49 +1,82 @@
 header {	
 	width: 100%;
 	padding-top: 40px;
+	@include breakpoint(extra-small) {
+		padding-top: 0;
+	}
 	.nav-color {		
 		min-height: 42px;
 		background-color: #ffffff;
 		border:none;
-		.but-style {
-			margin: 0;
-			border:none;
-			&:hover {
-				background-color: #ffffff;
-			}
-			&:focus {
-				background-color:#ffffff;
-			}
-			.icon-color {
-				width: 37px;
-				height: 6px;
-				background-color: #55a4da;
-			}
-		}
-		.logo {
-			height: 42px;
-			padding: 0 15px;
-			border: none;
-		} 
-		.list {
-			border: none;
-			@include breakpoint(small) {
-				ul {
-					li {
-						margin-right: 0;
-						a {
-							color:#ffffff;
-							font-family: "Helvetica Light";
-							font-size: 40px;
-						}
-					}
+		.nav-button {
+			padding-right: 0;
+			.but-style {
+				width: 102px;
+				height: 120px;
+				margin: 0;
+				background-color: #57baff;
+				border:none;
+				text-align: center;
+				@include border-radius(0px);
+				/* &:hover {
+					background-color: #57baff;
 				}
+				&:focus {
+					background-color:#57baff;
+				} */
+				.icon-color {
+					width: 37px;
+					height: 6px;
+					margin:4px auto;
+					background-color: #ffffff;
+				}
+			}
+			/* .collapsed {
+				            background-color: transparent;
+				        }  */
+			.logo-header {
+				display: inline-block;
+				width: 228px;
+				height: 42px;
+				padding: 0;				
+				background-image: url(../../images/header/header-convene.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				/* height: 42px;
+				padding: 0 15px;
+				border: none; */
+				@include breakpoint(extra-small) {
+					margin: 32px 15px 0;
+				}
+			}
+		}		
+		.list {
+			//padding-top: 40px;
+			text-align: center;
+			border: none;
+			@include clearfix;
+			@include breakpoint(small) {
+				float:right;
+			}
+			@include breakpoint(extra-small) {
+				width: 100%;
+				padding: 0;
+				background-color: #57baff;
 			}		
 			ul {
+				margin: 0;
 				li {
-					margin-right: 31px;					
+					margin-right: 31px;		
+					@include breakpoint(extra-small) {
+						height: 121px;
+						margin-right: 0;
+						border-bottom: 4px solid #53b1f2;
+					}			
 					&:last-child {
 						margin-right: 0;
+						@include breakpoint(extra-small) {
+							border-bottom: none;
+						}	
 					}
 					a {
 						padding: 0px;
@@ -55,6 +88,17 @@ header {
 						color: #061b2a;
 						@include transition-property(all);
 						@include transition-duration(400ms);
+						/* @include breakpoint(small) {
+								font-family: "Helvetica Light";
+								font-size: 40px;
+								color: #ffffff;
+							} */	
+						@include breakpoint(extra-small) {
+							font-family: "Helvetica Light";
+							font-size: 40px;
+							line-height: 121px;
+							color: #ffffff;
+						}
 						&:hover {
 							color: #1769a4;
 						}	

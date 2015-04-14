@@ -1,0 +1,36 @@
+.events {
+	background-color: #39a6f1;
+	background-image: url(../../../client/images/events/shape-events.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	h2 {
+		font-family: "Helvetica Light";
+		font-size: 36px;
+		color: #ffffff;
+	}
+	.description {
+		font-size: 0;
+		figure {
+			display: inline-block;
+			width: 270px;
+			height: 275px;
+			margin-right: 60px;
+			&::last-child {
+				margin-right: 0;
+			}
+			figcaption {
+				h3 {
+					font-family: "Helvetica Light";
+					font-size: 26px;
+					color: #ffffff;
+				}
+				p {
+					font-family: "Helvetica Regular";
+					font-size: 16px;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
