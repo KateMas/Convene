@@ -1,9 +1,19 @@
 .events {
+	padding-top: 136px;
+	padding-bottom: 171px;
 	background-color: #39a6f1;
 	background-image: url(../../../client/images/events/shape-events.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
+	@include breakpoint(small) {
+		padding-top: 81px;
+		padding-bottom: 108px;
+	}
+	@include breakpoint(extra-small) {
+		padding-top: 81px;
+		padding-bottom: 108px;
+	}
 	h2 {
 		font-family: "Helvetica Light";
 		font-size: 36px;

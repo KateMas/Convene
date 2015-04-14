@@ -6,6 +6,7 @@ header {
 	}
 	.nav-color {		
 		min-height: 42px;
+		margin-bottom: 0;
 		background-color: #ffffff;
 		border:none;
 		.nav-button {
@@ -96,6 +97,7 @@ header {
 						@include breakpoint(extra-small) {
 							font-family: "Helvetica Light";
 							font-size: 40px;
+							font-weight:400; 
 							line-height: 121px;
 							color: #ffffff;
 						}

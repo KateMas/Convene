@@ -75,10 +75,10 @@
 }
 	.social {
 		@include breakpoint(small) {
-				margin-top: 37px;
+				margin-top: 50px;
 			}
 		@include breakpoint(extra-small) {
-				margin-top: 37px;
+				margin-top: 50px;
 			}
 		.button {
 			&:first-child {

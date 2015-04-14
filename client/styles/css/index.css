@@ -7333,6 +7333,7 @@ header {
 }
 header .nav-color {
   min-height: 42px;
+  margin-bottom: 0;
   background-color: #ffffff;
   border: none;
 }
@@ -7448,6 +7449,7 @@ header .nav-color .list ul li a {
   header .nav-color .list ul li a {
     font-family: "Helvetica Light";
     font-size: 40px;
+    font-weight: 400;
     line-height: 121px;
     color: #ffffff;
   }
@@ -7593,12 +7595,12 @@ body.homepage .registration .getting h2 .heading span {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .registration .social {
-    margin-top: 37px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 767px) {
   body.homepage .registration .social {
-    margin-top: 37px;
+    margin-top: 50px;
   }
 }
 body.homepage .registration .social .button:first-child {
@@ -7663,11 +7665,25 @@ body.homepage .registration .led {
   margin-top: 69px;
 }
 body.homepage .events {
+  padding-top: 136px;
+  padding-bottom: 171px;
   background-color: #39a6f1;
   background-image: url(../../../client/images/events/shape-events.png);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.homepage .events {
+    padding-top: 81px;
+    padding-bottom: 108px;
+  }
+}
+@media (max-width: 767px) {
+  body.homepage .events {
+    padding-top: 81px;
+    padding-bottom: 108px;
+  }
 }
 body.homepage .events h2 {
   font-family: "Helvetica Light";
@@ -7704,6 +7720,18 @@ body.homepage .tweets {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.homepage .tweets {
+    padding-top: 127px;
+    padding-bottom: 158px;
+  }
+}
+@media (max-width: 767px) {
+  body.homepage .tweets {
+    padding-top: 127px;
+    padding-bottom: 158px;
+  }
 }
 body.homepage .tweets h2 {
   margin-top: 12px;

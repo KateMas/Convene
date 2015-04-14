@@ -6,6 +6,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
+	@include breakpoint(small) {
+		padding-top: 127px;
+		padding-bottom: 158px;
+	}
+	@include breakpoint(extra-small) {
+		padding-top: 127px;
+		padding-bottom: 158px;
+	}
 	h2 {
 		margin-top: 12px;
 		font-family: "Helvetica Light";
