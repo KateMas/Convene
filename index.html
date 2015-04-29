@@ -4,7 +4,8 @@
 	<title>Joint Work</title>
 	<meta charset="UTF-8">	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="client/styles/css/index.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="client/styles/css/index.css">
 	<script src="client/js/jquery-2.1.3.min.js"></script>
     <script src="client/js/bootstrap.min.js"></script>
 </head>
@@ -22,7 +23,7 @@
 							    <span class="icon-bar icon-color"></span>
 						     </button>
 						     <a class="navbar-brand logo-header" href="/">
-						     	<!-- <img src="client/images/header/header-convene.png" alt="/"> -->
+						     	<img src="client/images/header/header-convene.png" alt="/">
 						     </a>
 						</div>
 					    <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-3 col-md-4 col-md-offset-3 col-sm-12 col-xs-12 collapse navbar-collapse list" id="bs-example-navbar-collapse-1">          
@@ -38,47 +39,103 @@
 		</header>
 		<div class="registration container">
 			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 sign-in-up">
+					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">  
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active sign-up">
+								<a href="#sign-up" aria-controls="sign-up" role="tab" data-toggle="tab">Sign Up with Email</a>
+							</li>
+							<li role="presentation" class="sign-in">
+								<a href="#sign-in" aria-controls="sign-in" role="tab" data-toggle="tab">Sign In with Email</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="sign-up">
+						    	<form action="/">
+									<div class="form-group has-feedback">
+										<input type="text" placeholder="Your Name" name="Firstname" class="form-control">
+										<span class="glyphicon glyphicon-question-sign form-control-feedback glyph" aria-hidden="true"></span>					
+									</div>
+									<div class="form-group has-feedback">
+										<input type="email" placeholder="Email Address" name="Email" class="form-control" required>
+										<span class="glyphicon glyphicon-question-sign form-control-feedback glyph" aria-hidden="true"></span>					
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
+											<input type="password" placeholder="Password" name="Password" class="form-control" required>
+											<span class="glyphicon glyphicon-ok-sign form-control-feedback glyph glyph-passw" aria-hidden="true"></span>	
+										</div>	
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
+											<input type="password" placeholder="Repeat Password" name="Password" class="form-control" required>
+											<span class="glyphicon glyphicon-remove-sign form-control-feedback glyph glyph-passw-repeat" aria-hidden="true"></span>				
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
+											<button class="button-back">Back</button>			
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
+											<button class="button-sign-up">Sign Up</button>				
+										</div>
+									</div>									
+								</form>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="sign-in">
+						    	<form action="/" method="post">
+									<div class="form-group has-feedback">
+										<input type="email" placeholder="Email Address" name="Email" class="form-control" required>
+										<span class="glyphicon glyphicon-question-sign form-control-feedback glyph" aria-hidden="true"></span>					
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
+											<input type="email" placeholder="Password" name="Password" class="form-control" required>
+											<span class="glyphicon glyphicon-ok-sign form-control-feedback glyph glyph-passw" aria-hidden="true"></span>	
+										</div>
+									</div>									
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
+											<button class="button-back">Back</button>			
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
+											<button class="button-sign-up">Sign In</button>				
+										</div>
+									</div>					
+								</form>
+						    </div>
+						</div>
+					</div>
+				</div>
 				<div class="getting col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="titleContainer">
-					<span class="indent">
-						<span class="heading">
-							<h2 class='getting'>Getting things done together has never been so easy!</h2>
-						</span>	
-					</span>	 
+					<!-- <span class="indent">
+						<span class="heading"> -->
+							<h2 class='getting'><span class='first-span'>Getting things done together</span> <span class='second-span'>has never been so easy!</span></h2>
+						<!-- </span>	
+											</span>	  -->
 					<!-- <h2><span class="heading"><span>Getting</span> <span>things</span> <span>done</span> <span>together</span></br> <span>has</span> <span>never</span> <span>been</span> <span>so</span> <span>easy!</span></span></h2>  -->
 				</div>
 				<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 social">
 					<div class="button">
 					   <div class="icon-general icon-first">
-					   		<div class="icon-tw"></div>
+					   		<span class="icon-tw"></span>
 					   </div>
-					   <a href="https://twitter.com" class="text">
-					   		<p>Use your Twitter Account</p>
-					   	</a>	
+					   <a href="https://twitter.com" class="text">Use your Twitter Account</a>	
 					</div>
 					<div class="button">
 					   <div class="icon-general icon-second">
 					   		<div class="icon-fc"></div>
 					   </div>
-					   <a href="https://www.facebook.com/" class="text">
-					   		<p>Use your Facebook Account</p>
-					   	</a>	
+					   <a href="https://www.facebook.com/" class="text">Use your Facebook Account</a>	
 					</div>
 					<div class="button">
 					   <div class="icon-general icon-third">
 					   		<div class="icon-google"></div>
 					   </div>
-					   <a href="https://plus.google.com/" class="text">
-					   		<p>Use your Google+ Sign In</p>
-					   	</a>	
+					   <a href="https://plus.google.com/" class="text">Use your Google+ Sign In</a>	
 					</div>
 					<p class="choise">or you can</p>
 					<div class="button">
 					   <div class="icon-general icon-forth">
 					   		<div class="icon-email"></div>
 					   </div>
-					   <a href="javascript:void(0)" class="text">
-					   		<p>Use your Email Address</p>
-					   	</a>	
+					   <a href="javascript:void(0)" class="text">Use your Email Address</a>	
 					</div>
 				</div>
 			</div>
@@ -93,33 +150,33 @@
 		<section class="events">
 			<div class="container">
 				<div class="row">
-					<h2 class="col-lg-10 col-lg-offset-1">Life is full of meetings and events – both personal and professional. Now there’s a way to manage, participate, and keep track of it all.</h2>
-				</div>
-				<!-- <div class="row"> -->
-					<div class="description">
-						<figure>
-							<img src="client/images/events/calendar.png" alt="/"/>
-							<figcaption>
-								<h3>Connect</h3>
-								<p>Sync your calendar and contacts, to meet with anyone, anywhere, anytime - from the smallest groups to the largest conventions.</p>
-							</figcaption>
-						</figure>
-						<figure>
-							<img src="client/images/events/notes.png" alt="/"/>
-							<figcaption>
-								<h3>Collaborate</h3>
-								<p>Create agendas, share documents, take notes, and make commitments using the all-in-one meeting canvas.</p>
-							</figcaption>
-						</figure>
-						<figure>
-							<img src="client/images/events/clock.png" alt="/"/>
-							<figcaption>
-								<h3>Confirm</h3>
-								<p>Access the history of every meeting, contact, and commitment to know what happened, what's next and why it matters.</p>
-							</figcaption>
-						</figure>
-					</div>	
-				<!-- </div> -->								
+					<div class="col-lg-10 col-lg-offset-1">
+						<h2>Life is full of meetings and events – both personal and professional. Now there’s a way to manage, participate, and keep track of it all.</h2>
+						<div class="description row">
+							<figure class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+								<img src="client/images/events/calendar.png" alt="/"/>
+								<figcaption>
+									<h3>Connect</h3>
+									<p>Sync your calendar and contacts, to meet with anyone, anywhere, anytime - from the smallest groups to the largest conventions.</p>
+								</figcaption>
+							</figure>
+							<figure class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+								<img src="client/images/events/notes.png" alt="/"/>
+								<figcaption>
+									<h3>Collaborate</h3>
+									<p>Create agendas, share documents, take notes, and make commitments using the all-in-one meeting canvas.</p>
+								</figcaption>
+							</figure>
+							<figure class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+								<img src="client/images/events/clock.png" alt="/"/>
+								<figcaption>
+									<h3>Confirm</h3>
+									<p>Access the history of every meeting, contact, and commitment to know what happened, what's next and why it matters.</p>
+								</figcaption>
+							</figure>
+						</div>	
+					</div>
+				</div>									
 			</div>
 		</section>
 		<section class="tweets">
@@ -128,54 +185,70 @@
 				<h2>Tweets about Convene</h2>
 				<div class="row first-line">
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-left">
-							<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-left">
+								<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
+							</figcaption>
+						</div>						
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-left">
-							<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-left">
+								<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
+							</figcaption>
+						</div>						
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-left">
-							<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-left">
+								<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
+							</figcaption>
+						</div>						
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-left">
-							<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-left">
+								<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
+							</figcaption>
+						</div>						
 					</figure>
 				</div>
 				<div class="row second-line">
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-xs">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-right">
-							<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-right">
+								<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
+							</figcaption>
+						</div>						
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-xs">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-right">
-							<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-right">
+								<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
+							</figcaption>
+						</div>						
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-xs">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-right">
-							<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-right">
+								<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
+							</figcaption>
+						</div>						
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 hidden-xs">
-						<img src="client/images/tweets/photo.png" alt="/"/>
-						<figcaption class="block arrow-right">
-							<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
-						</figcaption>
+						<div class="row">
+							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-8 block arrow-right">
+								<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
+							</figcaption>
+						</div>						
 					</figure>
 				</div>
 			</div>			

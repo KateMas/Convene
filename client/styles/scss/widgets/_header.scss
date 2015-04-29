@@ -7,8 +7,9 @@ header {
 	.nav-color {		
 		min-height: 42px;
 		margin-bottom: 0;
-		background-color: #ffffff;
+		background-color: transparent;
 		border:none;
+		@include clearfix;
 		.nav-button {
 			padding-right: 0;
 			.but-style {
@@ -32,34 +33,37 @@ header {
 					background-color: #ffffff;
 				}
 			}
-			/* .collapsed {
-				            background-color: transparent;
-				        }  */
+			.collapsed {
+	            background-color: transparent;
+	            .icon-bar {
+	            	background-color: #57baff;
+	            }
+	        }  
 			.logo-header {
 				display: inline-block;
 				width: 228px;
 				height: 42px;
 				padding: 0;				
-				background-image: url(../../images/header/header-convene.png);
-				background-size: contain;
-				background-repeat: no-repeat;
+				//background-image: url(../../images/header/header-convene.png);
+				//background-size: contain;
+				//background-repeat: no-repeat;
 				/* height: 42px;
 				padding: 0 15px;
 				border: none; */
 				@include breakpoint(extra-small) {
-					margin: 32px 15px 0;
+					margin: 39px 15px 0;
 				}
 			}
 		}		
 		.list {
 			//padding-top: 40px;
+			float: right;
+			margin-right: 8.3333%;
 			text-align: center;
 			border: none;
 			@include clearfix;
-			@include breakpoint(small) {
-				float:right;
-			}
 			@include breakpoint(extra-small) {
+				float: none;
 				width: 100%;
 				padding: 0;
 				background-color: #57baff;

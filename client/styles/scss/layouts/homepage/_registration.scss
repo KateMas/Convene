@@ -14,6 +14,151 @@
 		font-weight: 600;
 		color:#55a4da;
 	}
+	.sign-in-up {
+		display: none;
+		ul {
+			border:none;
+			li {
+				width: 50%;
+				height: 100%;
+				background-color: #f7f8f8;
+				border:1px solid #d4d4d4;		
+				text-align: center;
+				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);	
+				@include breakpoint(small) {
+					width: 100%;
+					&:last-child {
+						margin-top:20px;
+					}
+				}
+				@include breakpoint(extra-small) {
+					width: 100%;
+					&:last-child {
+						margin-top:20px;
+					}
+				}	
+				a {
+					height: 100%;
+					padding: 0;
+					background-color: transparent;
+					border:none;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 59px;
+					color: #6c6c6c;
+					@include breakpoint(small) {
+						font-size: 20px;
+					}
+					@include breakpoint(extra-small) {
+						font-size: 20px;
+					}
+				}
+			}
+			.active {				 
+				background-color: #4da1e0;
+				border: 1px solid #287fbe;
+				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
+				@include background-image(linear-gradient(top, rgba(#000000,0.1) 0%,rgba(#808080,0.1) 100%));
+				a {
+					color: #ffffff;
+					@include text-shadow (0 1px 2px rgba(#000000,0.75));
+				}			
+			}
+			.sign-up {
+				@include border-radius(3px 0 0 3px);	
+			}
+			.sign-in {
+				@include border-radius(0 3px 3px 0);	
+			}
+		}
+		form {
+			padding-top: 30px;
+			@include box-sizing(border-box);
+			input {
+				width: 100%;
+				height: 40px;
+				padding-left: 9px;
+				background-color: #f7f8f8;
+				border:1px solid #d4d4d4;
+				outline: none;
+				line-height: 40px;			
+				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
+				@include border-radius(3px);
+				@include transition-property(all);
+				@include transition-duration (400ms);
+				&:focus {
+					background-color: #98d1fa;
+					color: #256ea3;
+					@include placeholder {
+						color: transparent;
+					}				
+				}
+				@include placeholder {
+					font-family: 'Open Sans', sans-serif;
+					font-weight: 600;
+					font-size: 13px;
+					color: #061b2a;
+				}			
+			}
+			.glyph {
+				height: 40px;
+				line-height: 40px;
+			}
+			.glyph-passw {
+				right: 15px;
+				color: #a0d271;
+			}
+			.glyph-passw-repeat {
+				right: 15px;
+				color: #ff5958;
+			}
+			.button-back {
+				float: left;
+				width: 50%;
+				height: 58px;
+				border:1px solid #d4d4d4;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+				font-size: 15px;
+				color: #696a6a;
+				@include border-radius(3px);
+				@include text-shadow (0 1px 0px 0 rgba(#ffffff,0.75));
+				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
+				@include background-image(linear-gradient(top, rgba(#ffffff,0.15) 0%,rgba(#000000,0.15) 100%));
+				@include breakpoint(small) {
+					float: none;
+					font-size: 20px;
+				}	
+				@include breakpoint(extra-small) {
+					float: none;
+					font-size: 20px;
+				}
+			}	
+			.button-sign-up {
+				float: right;
+				width: 100%;
+				height: 58px;
+				background-color: #4da1e0;
+				border: 1px solid #287fbe;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+				font-size: 15px;
+				color: #ffffff;
+				@include border-radius(3px);
+				@include text-shadow (0 1px 2px rgba(#000000,0.45));
+				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
+				@include background-image(linear-gradient(top, rgba(#000000,0.1) 0%,rgba(#808080,0.1) 100%));
+				@include breakpoint(small) {
+					font-size: 20px;
+				}	
+				@include breakpoint(extra-small) {
+					font-size: 20px;
+				}
+			}	
+		}
+	}
+	
 		/* #titleContainer {
 			display: inline-block;
 		    width: 520px;		    
@@ -46,10 +191,13 @@
 		//width: 600px;
 		//height: 120px;		
 		 h2 {
+		 	//height: 102px;
+		 	//border-left: 4px solid #1769a4;
 		 	font-family: "Helvetica Light";
 			font-size: 44px;
 			text-align: left;
 			letter-spacing: -1px;
+			color: #ffffff;
 			@include breakpoint(small) {
 				text-align: center;
 				font-size: 40px;
@@ -58,19 +206,27 @@
 				text-align: center;
 				font-size: 40px;
 			}
-			span {
+			.first-span {
+				background: #1769a4;
+				padding:12px 12px 19px 5px;
+			}
+			.second-span {
+				background: #1769a4;
+				padding:6px 10px 19px 5px;
+			}
+			/* span {
 				display: inline-block;		
 				span {
 					 padding: 0.05em 0.25em;
-		   			 margin: 0 -0.5em 0 0;
+					   			 margin: 0 -0.5em 0 0;
 				}
 			}
 			.heading { 
 				span {
 					background-color: #1769a4;
 			    	color: #ffffff;
-		    	}
-			}
+					    	}
+			} */
 		}
 }
 	.social {
@@ -93,9 +249,9 @@
 				//margin-bottom: 17px;
 				margin: 0px auto 17px;
 			}
-			&:last-child {
+			/* &:last-child {
 				margin: auto;
-			}
+			} */
 			.icon-first {
 				background-color: #08a1df;
 				border:1px solid #287fbe;
@@ -103,7 +259,7 @@
 					width: 26px;
 					height: 21px;
 					margin: 8px auto;		
-					background-image:url(../../images/social-sb0b98f1037.png);
+					background-image:url(../../images/social-s0c8da8efb1.png);
 					background-repeat: no-repeat;			
 					@extend.social-twitter;
 				}
@@ -115,7 +271,7 @@
 					width: 13px;
 					height: 24px;
 					margin: 7px auto;		
-					background-image:url(../../images/social-sb0b98f1037.png);
+					background-image:url(../../images/social-s0c8da8efb1.png);
 					background-repeat: no-repeat;			
 					@extend.social-fc;
 				}
@@ -127,9 +283,9 @@
 					width: 14px;
 					height: 26px;
 					margin: 6px auto;		
-					background-image:url(../../images/social-sb0b98f1037.png);
+					background-image:url(../../images/social-s0c8da8efb1.png);
 					background-repeat: no-repeat;			
-					@extend.social-g;
+					@extend.social-google;
 				}
 			}
 			.icon-forth {
@@ -139,7 +295,7 @@
 					width: 24px;
 					height: 24px;
 					margin: 7px auto;		
-					background-image:url(../../images/social-sb0b98f1037.png);
+					background-image:url(../../images/social-s0c8da8efb1.png);
 					background-repeat: no-repeat;			
 					@extend.social-at;
 				}
