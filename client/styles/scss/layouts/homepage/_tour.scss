@@ -13,7 +13,7 @@
 		margin: 0;
 		font-family: "Helvetica Light";
 		font-size: 24px;
-		line-height: 58px;
+		//line-height: 58px;
 		text-align: left;
 		letter-spacing: -1px;
 		color: #ffffff;
@@ -26,7 +26,7 @@
 		}
 		@include breakpoint(extra-small) {
 			font-size: 48px;
-			line-height: 52px;
+			//line-height: 52px;
 			letter-spacing: normal;
 		}
 	}

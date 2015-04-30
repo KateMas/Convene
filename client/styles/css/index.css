@@ -7216,13 +7216,14 @@ button.close {
   background-position: 0 -74px;
 }
 
-@font-face {
-  font-family: "Helvetica Light";
-  src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.otf?1427379959') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.svg?1427379971') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.ttf?1427379157') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light-Light.woff?1427379964') format('woff');
-}
+/* @include font-face("Helvetica Light", font-files("../../../client/fonts/helvetica-light/Helvetica-Light-Light.otf","../../../client/fonts/helvetica-light/Helvetica-Light-Light.svg","../../../client/fonts/helvetica-light/Helvetica-Light-Light.ttf","../../../client/fonts/helvetica-light/Helvetica-Light-Light.woff")); */
 @font-face {
   font-family: "Helvetica Regular";
   src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot?1427357100') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg?1427357100') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf?1427357100') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff?1427357100') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2?1427357100') format('woff2');
+}
+@font-face {
+  font-family: "Helvetica Light";
+  src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light.otf?1421217996') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-light-webfont.ttf?1430386506') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.woff') format('woff');
 }
 body.homepage .container-background {
   background-image: url(../../../client/images/bg-header-monitor.png);
@@ -7522,34 +7523,6 @@ footer p {
 body.homepage .registration {
   padding-top: 59px;
   text-align: center;
-  /* #titleContainer {
-  	display: inline-block;
-      width: 520px;		    
-      padding: 1px 0;
-      border-left: 30px solid #1769a4; 		    
-      line-height: 1.1; 
-      .indent { 
-  	    position: relative; 
-  	    left: -15px;
-  	    .heading {
-  		    background-color: #1769a4;
-  		    color: #00a3d0;
-  		    h2 {
-  			    display: inline; 
-  			    margin: 0; 
-  			    padding: 0;
-  			    background-color: #1769a4; 
-  			    font-family: "Helvetica Light";
-  			    font-size: 44px;
-  			    color: #fff; 	   						
-  			}	
-  		}
-  	}			
-  }  */
-  /* span {
-  	display: block;
-  	background-color: #1769a4;
-  } */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .registration {
@@ -7789,45 +7762,31 @@ body.homepage .registration .sign-in-up form .button-sign-up {
     font-size: 20px;
   }
 }
-body.homepage .registration .getting h2 {
+body.homepage .registration .getting {
   font-family: "Helvetica Light";
   font-size: 44px;
+  line-height: 52px;
   text-align: left;
   letter-spacing: -1px;
   color: #ffffff;
-  /* span {
-  	display: inline-block;		
-  	span {
-  		 padding: 0.05em 0.25em;
-  		   			 margin: 0 -0.5em 0 0;
-  	}
-  }
-  .heading { 
-  	span {
-  		background-color: #1769a4;
-      	color: #ffffff;
-  		    	}
-  } */
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body.homepage .registration .getting h2 {
+  body.homepage .registration .getting {
+    line-height: 47px;
     text-align: center;
     font-size: 40px;
   }
 }
 @media (max-width: 767px) {
-  body.homepage .registration .getting h2 {
+  body.homepage .registration .getting {
+    line-height: 47px;
     text-align: center;
     font-size: 40px;
   }
 }
-body.homepage .registration .getting h2 .first-span {
+body.homepage .registration .getting span {
+  padding: 0 12px 0 5px;
   background: #1769a4;
-  padding: 12px 12px 19px 5px;
-}
-body.homepage .registration .getting h2 .second-span {
-  background: #1769a4;
-  padding: 6px 10px 19px 5px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .registration .social {
@@ -7976,7 +7935,6 @@ body.homepage .tweets h2 {
 @media (max-width: 767px) {
   body.homepage .tweets h2 {
     font-size: 48px;
-    line-height: 64px;
   }
 }
 body.homepage .tweets .row img {
@@ -8099,7 +8057,6 @@ body.homepage .tour h2 {
   margin: 0;
   font-family: "Helvetica Light";
   font-size: 24px;
-  line-height: 58px;
   text-align: left;
   letter-spacing: -1px;
   color: #ffffff;
@@ -8118,7 +8075,6 @@ body.homepage .tour h2 {
 @media (max-width: 767px) {
   body.homepage .tour h2 {
     font-size: 48px;
-    line-height: 52px;
     letter-spacing: normal;
   }
 }
