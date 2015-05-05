@@ -7310,14 +7310,9 @@ body.homepage .container-background {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .button .text {
-    font-size: 20px;
-  }
-}
 @media (max-width: 767px) {
   .button .text {
-    font-size: 20px;
+    line-height: normal;
   }
 }
 
@@ -7377,17 +7372,24 @@ header .nav-color .nav-button .collapsed .icon-bar {
 }
 header .nav-color .nav-button .logo-header {
   display: inline-block;
-  width: 228px;
   height: 42px;
+  margin-left: 0;
   padding: 0;
+  line-height: 42px;
   /* height: 42px;
   padding: 0 15px;
   border: none; */
 }
 @media (max-width: 767px) {
   header .nav-color .nav-button .logo-header {
-    margin: 39px 15px 0;
+    width: 50%;
+    height: 120px;
+    line-height: 120px;
   }
+}
+header .nav-color .nav-button .logo-header img {
+  display: inline-block;
+  width: 100%;
 }
 header .nav-color .list {
   float: right;
@@ -7418,8 +7420,8 @@ header .nav-color .list ul li {
 }
 @media (max-width: 767px) {
   header .nav-color .list ul li {
-    height: 121px;
     margin-right: 0;
+    border-top: 1px solid #57baff;
     border-bottom: 4px solid #53b1f2;
   }
 }
@@ -7785,7 +7787,9 @@ body.homepage .registration .getting {
   }
 }
 body.homepage .registration .getting span {
-  padding: 0 12px 0 5px;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
   background: #1769a4;
 }
 @media (min-width: 768px) and (max-width: 991px) {

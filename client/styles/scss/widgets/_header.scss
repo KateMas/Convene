@@ -41,9 +41,11 @@ header {
 	        }  
 			.logo-header {
 				display: inline-block;
-				width: 228px;
+				//width: 228px;
 				height: 42px;
-				padding: 0;				
+				margin-left: 0;
+				padding: 0;	
+				line-height: 42px;			
 				//background-image: url(../../images/header/header-convene.png);
 				//background-size: contain;
 				//background-repeat: no-repeat;
@@ -51,9 +53,16 @@ header {
 				padding: 0 15px;
 				border: none; */
 				@include breakpoint(extra-small) {
-					margin: 39px 15px 0;
+					width: 50%;
+					height: 120px;
+					line-height: 120px;
+					//margin: 39px 15px 0;
+					}
+					img {
+						display: inline-block;
+						width: 100%;
+					}
 				}
-			}
 		}		
 		.list {
 			//padding-top: 40px;
@@ -73,8 +82,9 @@ header {
 				li {
 					margin-right: 31px;		
 					@include breakpoint(extra-small) {
-						height: 121px;
+						//height: 121px;
 						margin-right: 0;
+						border-top: 1px solid #57baff;
 						border-bottom: 4px solid #53b1f2;
 					}			
 					&:last-child {

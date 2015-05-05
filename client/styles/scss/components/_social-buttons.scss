@@ -44,10 +44,10 @@
 		@include transition-property(all);
 		@include transition-duration(400ms);
 		@include breakpoint(small) {
-			font-size: 20px;
+			//line-height: normal;
 		}
 		@include breakpoint(extra-small) {
-			font-size: 20px;
+			line-height: normal;
 		}			
 	}
 }	
