@@ -205,12 +205,7 @@
 			margin-top: 33px;
 		}
 		.button {
-			@include breakpoint(extra-small) {
-				height: 61px;
-			}
-			@include breakpoint(extra-xs-small) {
-				height: 70px;
-			}
+			@include clearfix;
 			&:first-child {
 				margin: 0px auto 11px;
 				@include breakpoint(extra-small) {
@@ -229,77 +224,11 @@
 					margin: 0px auto 17px;
 				}
 			}
-			.icon-first {
-				background-color: #08a1df;
-				border:1px solid #287fbe;
-				.icon-tw {
-					width: 26px;
-					height: 21px;
-					margin: 8px auto;
-					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;
-					@extend.social-twitter;
-					@include breakpoint(extra-small) {
-						margin: 20px auto;
-					}
-					@include breakpoint(extra-xs-small) {
-						margin: 24px auto;
-					}
-				}
+			.icon-general {
+				float: left;
 			}
-			.icon-second {
-				background-color: #395490;
-				border:1px solid #253c6f;
-				.icon-fc {
-					width: 13px;
-					height: 24px;
-					margin: 7px auto;
-					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;
-					@extend.social-fc;
-					@include breakpoint(extra-small) {
-						margin: 18px auto;
-					}
-					@include breakpoint(extra-xs-small) {
-						margin: 23px auto;
-					}
-				}
-			}
-			.icon-third {
-				background-color: #d05340;
-				border:1px solid #aa1828;
-				.icon-google {
-					width: 14px;
-					height: 26px;
-					margin: 6px auto;
-					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;
-					@extend.social-google;
-					@include breakpoint(extra-small) {
-						margin: 17px auto;
-					}
-					@include breakpoint(extra-xs-small) {
-						margin: 22px auto;
-					}
-				}
-			}
-			.icon-forth {
-				background-color: #3d9de2;
-				border:1px solid #287fbe;
-				.icon-email {
-					width: 24px;
-					height: 24px;
-					margin: 7px auto;
-					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;
-					@extend.social-at;
-					@include breakpoint(extra-small) {
-						margin: 18px auto;
-					}
-					@include breakpoint(extra-xs-small) {
-						margin: 23px auto;
-					}
-				}
+			.text {
+				float: right;
 			}
 		}
 	}

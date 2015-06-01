@@ -2,11 +2,11 @@
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
 @import "bootstrap";
-@import "compass/utilities/sprites";
+//@import "compass/utilities/sprites";
 
 //sprites
-@import "social/*.png";
-@include all-social-sprites;
+//@import "social/*.png";
+//@include all-social-sprites;
 
 
 //fonts
@@ -22,7 +22,7 @@
 @import "base";
 
 //components
-@import "components/social-buttons";
+@import "components/buttons";
 
 //widgets
 @import "widgets/header";
