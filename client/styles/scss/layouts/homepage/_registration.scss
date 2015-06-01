@@ -1,6 +1,6 @@
 
 .registration {
-	padding-top: 59px;
+	padding-top: 70px;
 	text-align: center;
 	@include breakpoint(small) {
 		padding-top: 15px;
@@ -8,11 +8,19 @@
 	@include breakpoint(extra-small) {
 		padding-top: 15px;
 	}
+	@include breakpoint(extra-xs-small) {
+		padding-top: 15px;
+	}
 	.choise {
+		margin: 0 0 11px;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13px;
 		font-weight: 600;
 		color:#55a4da;
+		@include breakpoint(extra-small) {
+			margin: 0 0 17px;
+			font-size: 20px;
+		}
 	}
 	.sign-in-up {
 		display: none;
@@ -22,9 +30,9 @@
 				width: 50%;
 				height: 100%;
 				background-color: #f7f8f8;
-				border:1px solid #d4d4d4;		
+				border:1px solid #d4d4d4;
 				text-align: center;
-				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);	
+				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
 				@include breakpoint(small) {
 					width: 100%;
 					&:last-child {
@@ -36,7 +44,7 @@
 					&:last-child {
 						margin-top:20px;
 					}
-				}	
+				}
 				a {
 					height: 100%;
 					padding: 0;
@@ -55,7 +63,7 @@
 					}
 				}
 			}
-			.active {				 
+			.active {
 				background-color: #4da1e0;
 				border: 1px solid #287fbe;
 				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
@@ -63,13 +71,13 @@
 				a {
 					color: #ffffff;
 					@include text-shadow (0 1px 2px rgba(#000000,0.75));
-				}			
+				}
 			}
 			.sign-up {
-				@include border-radius(3px 0 0 3px);	
+				@include border-radius(3px 0 0 3px);
 			}
 			.sign-in {
-				@include border-radius(0 3px 3px 0);	
+				@include border-radius(0 3px 3px 0);
 			}
 		}
 		form {
@@ -82,7 +90,7 @@
 				background-color: #f7f8f8;
 				border:1px solid #d4d4d4;
 				outline: none;
-				line-height: 40px;			
+				line-height: 40px;
 				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
 				@include border-radius(3px);
 				@include transition-property(all);
@@ -92,14 +100,14 @@
 					color: #256ea3;
 					@include placeholder {
 						color: transparent;
-					}				
+					}
 				}
 				@include placeholder {
 					font-family: 'Open Sans', sans-serif;
 					font-weight: 600;
 					font-size: 13px;
 					color: #061b2a;
-				}			
+				}
 			}
 			.glyph {
 				height: 40px;
@@ -129,12 +137,12 @@
 				@include breakpoint(small) {
 					float: none;
 					font-size: 20px;
-				}	
+				}
 				@include breakpoint(extra-small) {
 					float: none;
 					font-size: 20px;
 				}
-			}	
+			}
 			.button-sign-up {
 				float: right;
 				width: 100%;
@@ -151,14 +159,15 @@
 				@include background-image(linear-gradient(top, rgba(#000000,0.1) 0%,rgba(#808080,0.1) 100%));
 				@include breakpoint(small) {
 					font-size: 20px;
-				}	
+				}
 				@include breakpoint(extra-small) {
 					font-size: 20px;
 				}
-			}	
+			}
 		}
-	}	
+	}
 	.getting {
+		margin-top: 19px;
 	 	font-family: "Helvetica Light";
 		font-size: 44px;
 		line-height: 52px;
@@ -171,94 +180,136 @@
 			font-size: 40px;
 		}
 		@include breakpoint(extra-small) {
+			margin-top: 11px;
+			line-height: 47px;
+			text-align: center;
+			font-size: 40px;
+		}
+		@include breakpoint(extra-xs-small) {
 			line-height: 47px;
 			text-align: center;
 			font-size: 40px;
 		}
 		 span {
 		 	display: inline-block;
-		 	//padding: 0 12px 0 5px;
 		 	padding-right: 10px;
 		 	padding-left: 10px;
 			background: #1769a4;
-		} 
+		}
 	}
 	.social {
 		@include breakpoint(small) {
-				margin-top: 50px;
-			}
+			margin-top: 50px;
+		}
 		@include breakpoint(extra-small) {
-				margin-top: 50px;
-			}
+			margin-top: 33px;
+		}
 		.button {
+			@include breakpoint(extra-small) {
+				height: 61px;
+			}
+			@include breakpoint(extra-xs-small) {
+				height: 70px;
+			}
 			&:first-child {
-				//margin-bottom: 11px;
 				margin: 0px auto 11px;
+				@include breakpoint(extra-small) {
+					margin: 0px auto 17px;
+				}
 			}
 			&:nth-child(2) {
-				//margin-bottom: 11px;
 				margin: 0px auto 11px;
+				@include breakpoint(extra-small) {
+					margin: 0px auto 17px;
+				}
 			}
 			&:nth-child(3) {
-				//margin-bottom: 17px;
-				margin: 0px auto 17px;
+				margin: 0px auto 13px;
+				@include breakpoint(extra-small) {
+					margin: 0px auto 17px;
+				}
 			}
-			/* &:last-child {
-				margin: auto;
-			} */
 			.icon-first {
 				background-color: #08a1df;
 				border:1px solid #287fbe;
-				.icon-tw {	
+				.icon-tw {
 					width: 26px;
 					height: 21px;
-					margin: 8px auto;		
+					margin: 8px auto;
 					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;			
+					background-repeat: no-repeat;
 					@extend.social-twitter;
+					@include breakpoint(extra-small) {
+						margin: 20px auto;
+					}
+					@include breakpoint(extra-xs-small) {
+						margin: 24px auto;
+					}
 				}
 			}
 			.icon-second {
 				background-color: #395490;
 				border:1px solid #253c6f;
-				.icon-fc {	
+				.icon-fc {
 					width: 13px;
 					height: 24px;
-					margin: 7px auto;		
+					margin: 7px auto;
 					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;			
+					background-repeat: no-repeat;
 					@extend.social-fc;
+					@include breakpoint(extra-small) {
+						margin: 18px auto;
+					}
+					@include breakpoint(extra-xs-small) {
+						margin: 23px auto;
+					}
 				}
 			}
 			.icon-third {
 				background-color: #d05340;
 				border:1px solid #aa1828;
-				.icon-google {	
+				.icon-google {
 					width: 14px;
 					height: 26px;
-					margin: 6px auto;		
+					margin: 6px auto;
 					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;			
+					background-repeat: no-repeat;
 					@extend.social-google;
+					@include breakpoint(extra-small) {
+						margin: 17px auto;
+					}
+					@include breakpoint(extra-xs-small) {
+						margin: 22px auto;
+					}
 				}
 			}
 			.icon-forth {
 				background-color: #3d9de2;
 				border:1px solid #287fbe;
-				.icon-email {	
+				.icon-email {
 					width: 24px;
 					height: 24px;
-					margin: 7px auto;		
+					margin: 7px auto;
 					background-image:url(../../images/social-s0c8da8efb1.png);
-					background-repeat: no-repeat;			
+					background-repeat: no-repeat;
 					@extend.social-at;
+					@include breakpoint(extra-small) {
+						margin: 18px auto;
+					}
+					@include breakpoint(extra-xs-small) {
+						margin: 23px auto;
+					}
 				}
 			}
 		}
-	}	
+	}
 	.led {
 		width: 100%;
-		height: 100%;
+		height: 283px;
 		margin-top: 69px;
-	}		
+		@include breakpoint(extra-small) {
+			height: 159px;
+			margin-top: 32px;
+		}
+	}
 }

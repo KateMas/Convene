@@ -7,7 +7,7 @@ footer {
 		padding-top: 91px;
 		padding-bottom: 91px;
 		}
-	@include box-sizing(border-box);			
+	@include box-sizing(border-box);
 	.size-logo {
 		height: 42px;
 		.logo-footer {
@@ -24,13 +24,12 @@ footer {
 				background-position: center center;
 			}
 		}
-	}	
+	}
 	p {
-		margin: 0px;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
 		font-weight: 600;
-		line-height: 42px;
+		line-height: 38px;
 		text-align: right;
 		color: #494a4a;
 		@include breakpoint(small) {
@@ -38,8 +37,8 @@ footer {
 			text-align: center;
 			}
 		@include breakpoint(extra-small) {
-			padding-top: 47px;
+			padding-top: 43px;
 			text-align: center;
 		}
-	}		
+	}
 }

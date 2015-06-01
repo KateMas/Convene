@@ -1,10 +1,13 @@
-header {	
+header {
 	width: 100%;
 	padding-top: 40px;
 	@include breakpoint(extra-small) {
 		padding-top: 0;
 	}
-	.nav-color {		
+	@include breakpoint(extra-xs-small) {
+		padding-top: 0;
+	}
+	.nav-color {
 		min-height: 42px;
 		margin-bottom: 0;
 		background-color: transparent;
@@ -20,17 +23,12 @@ header {
 				border:none;
 				text-align: center;
 				@include border-radius(0px);
-				/* &:hover {
-					background-color: #57baff;
-				}
-				&:focus {
-					background-color:#57baff;
-				} */
 				.icon-color {
 					width: 37px;
 					height: 6px;
 					margin:4px auto;
 					background-color: #ffffff;
+					@include border-radius(2px);
 				}
 			}
 			.collapsed {
@@ -38,36 +36,40 @@ header {
 	            .icon-bar {
 	            	background-color: #57baff;
 	            }
-	        }  
+	        }
 			.logo-header {
 				display: inline-block;
-				//width: 228px;
+				width: 228px;
 				height: 42px;
 				margin-left: 0;
-				padding: 0;	
-				line-height: 42px;			
-				//background-image: url(../../images/header/header-convene.png);
-				//background-size: contain;
-				//background-repeat: no-repeat;
-				/* height: 42px;
-				padding: 0 15px;
-				border: none; */
+				padding: 0;
+				background-image: url(../../../client/images/header/header-convene.png);
 				@include breakpoint(extra-small) {
-					width: 40%;
-					height: 120px;
+					width: 305px;
+					height: 56px;
+					margin-top: 32px;
+					margin-left: 23px;
+					background-image: url(../../../client/images/header/header-convene-mob.png);
+				}
+				@include breakpoint(extra-xs-small) {
+					height: 100%;
 					line-height: 120px;
-					//margin: 39px 15px 0;
+				}
+				img {
+					display: inline-block;
+					@include breakpoint(extra-small) {
+						//width: 180px;
 					}
-					img {
-						display: inline-block;
-						width: 100%;
+					@include breakpoint(extra-xs-small) {
+						width: 180px;
 					}
 				}
-		}		
+			}
+		}
 		.list {
-			//padding-top: 40px;
 			float: right;
-			margin-right: 8.3333%;
+			//margin-right: 8.3333%;
+			margin-right: 98px;
 			text-align: center;
 			border: none;
 			@include clearfix;
@@ -76,22 +78,35 @@ header {
 				width: 100%;
 				padding: 0;
 				background-color: #57baff;
-			}		
+			}
+			@include breakpoint(extra-xs-small) {
+				float: none;
+				width: 100%;
+				padding: 0;
+				background-color: #57baff;
+			}
 			ul {
 				margin: 0;
 				li {
-					margin-right: 31px;		
+					margin-right: 31px;
 					@include breakpoint(extra-small) {
-						//height: 121px;
 						margin-right: 0;
 						border-top: 1px solid #57baff;
 						border-bottom: 4px solid #53b1f2;
-					}			
+					}
+					@include breakpoint(extra-xs-small) {
+						margin-right: 0;
+						border-top: 1px solid #57baff;
+						border-bottom: 4px solid #53b1f2;
+					}
 					&:last-child {
 						margin-right: 0;
 						@include breakpoint(extra-small) {
 							border-bottom: none;
-						}	
+						}
+						@include breakpoint(extra-xs-small) {
+							border-bottom: none;
+						}
 					}
 					a {
 						padding: 0px;
@@ -103,24 +118,26 @@ header {
 						color: #061b2a;
 						@include transition-property(all);
 						@include transition-duration(400ms);
-						/* @include breakpoint(small) {
-								font-family: "Helvetica Light";
-								font-size: 40px;
-								color: #ffffff;
-							} */	
 						@include breakpoint(extra-small) {
 							font-family: "Helvetica Light";
 							font-size: 40px;
-							font-weight:400; 
+							font-weight:400;
+							line-height: 121px;
+							color: #ffffff;
+						}
+						@include breakpoint(extra-xs-small) {
+							font-family: "Helvetica Light";
+							font-size: 40px;
+							font-weight:400;
 							line-height: 121px;
 							color: #ffffff;
 						}
 						&:hover {
 							color: #1769a4;
-						}	
+						}
 					}
 				}
 			}
-		}			
+		}
 	}
 }
