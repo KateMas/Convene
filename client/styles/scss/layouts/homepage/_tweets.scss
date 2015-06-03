@@ -7,12 +7,16 @@
 	background-repeat: no-repeat;
 	text-align: center;
 	@include breakpoint(small) {
-		padding-top: 127px;
-		padding-bottom: 158px;
+		padding-top: 56px;
+		padding-bottom: 83px;
 	}
 	@include breakpoint(extra-small) {
 		padding-top: 128px;
 		padding-bottom: 158px;
+	}
+	@include breakpoint(extra-xs-small) {
+		padding-top: 43px;
+		padding-bottom: 47px;
 	}
 	.twit {
 		@include breakpoint(extra-small) {
@@ -21,63 +25,67 @@
 	}
 	h2 {
 		margin-top: 12px;
-		font-family: "Helvetica Light";
 		font-size: 24px;
 		line-height: 16px;
-		color: #ffffff;
+		@include breakpoint(small) {
+			margin-top: 21px;
+			margin-bottom: 16px;
+			font-size: 36px;
+		}
 		@include breakpoint(extra-small) {
 			margin-top: 32px;
 			font-size: 48px;
-			//line-height: 64px;
 		}
 	}
-	.row {
-		img {
-		/* @include breakpoint(small) {
-			width: 20%;
+	figure {
+		@include clearfix;
+		figcaption{
+			height: 108px;
+			background-color: #ffffff;
+			color: #676767;
+			@include border-radius(5px);
+			@include box-shadow (0 0 0 1px #d4d4d4 inset);
+			@include breakpoint(small) {
+				height: 178px;
 			}
-		@include breakpoint(extra-small) {
-			width: 20%;
-			} */
-	}
-		figure {
-			@include clearfix;
-			figcaption{
-				//width: 170px;
-				//width: 65%;
-				height: 108px;
-				background-color: #ffffff;
+			@include breakpoint(extra-small) {
+				height: 279px;
+				line-height: 28px;
+			}
+			@include breakpoint(extra-xs-small) {
+				height: 143px;
+			}
+			p {
+				margin: 0;
+				padding: 12px 13px;
 				font-family: 'Open Sans', sans-serif;
 				font-size: 13px;
 				font-weight: 400;
-				color: #676767;
-				@include border-radius(5px);
-				@include box-shadow (0 0 0 1px #d4d4d4 inset);	
+				line-height: 16px;
+				text-align: left;
+				word-wrap:break-word;
 				@include breakpoint(small) {
-					height: 100%;
 					font-size: 20px;
+					line-height: 31px;
 				}
-				p {
-					margin: 0;
-					padding: 12px 0 15px 0;
-					line-height: 16px;
-					text-align: left;
-					word-wrap:break-word;
-					@include breakpoint(extra-small) {
-						padding: 30px 0 15px 9px;
-						line-height: 31px;
-					}
+				@include breakpoint(extra-small) {
+					padding: 28px 3px 12px 24px;
+					font-size: 26px;
+					line-height: 31px;
+				}
+				@include breakpoint(extra-xs-small) {
+					padding: 12px 3px 12px 9px;
 				}
 			}
-			.block {
-			    position: relative;
-			    display: inline-block;
-				&::after {
-				    width: 0;
-				    height: 0;
-				    content:' ';
-				    position: absolute;
-				}
+		}
+		.block {
+		    position: relative;
+		    display: inline-block;
+			&::after {
+			    width: 0;
+			    height: 0;
+			    content:' ';
+			    position: absolute;
 			}
 		}
 	}
@@ -96,11 +104,10 @@
 			}
 			figcaption{
 				float: right;
-				@include breakpoint(extra-small) {
-					width: 327px;
-					height: 214px;
-					font-size: 26px;
-					line-height: 28px;
+				p {
+					@include breakpoint(small) {
+						padding: 28px 20px 12px 24px;
+					}
 				}
 			}
 			.arrow-left {
@@ -111,6 +118,11 @@
 				    border-width: 10px 10px 10px 0;
 				    border-style: solid;
 				    border-color: transparent #ffffff transparent transparent;
+				    @include breakpoint(small) {
+						top: 33px;
+						left: -19px;
+						border-width: 20px 20px 20px 0;
+					}
 				    @include breakpoint(extra-small) {
 						top: 51px;
 						left: -19px;
@@ -128,6 +140,11 @@
 			}
 			figcaption{
 				float: left;
+				p {
+					@include breakpoint(small) {
+						padding: 28px 24px 12px 20px;
+					}
+				}
 			}
 			.arrow-right {
 			    background-color: #ffffff;
@@ -137,6 +154,11 @@
 				    border-width: 10px 0 10px 10px;
 				    border-style: solid;
 				    border-color: transparent transparent transparent #ffffff;
+				    @include breakpoint(small) {
+						top: 33px;
+						right: -19px;
+						border-width: 20px 0 20px 20px;
+					}
 				}
 			}
 		}

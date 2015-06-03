@@ -6,7 +6,11 @@ footer {
 	@include breakpoint(extra-small) {
 		padding-top: 91px;
 		padding-bottom: 91px;
-		}
+	}
+	@include breakpoint(extra-xs-small) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	@include box-sizing(border-box);
 	.size-logo {
 		height: 42px;
@@ -21,6 +25,9 @@ footer {
 				background-position: center center;
 				}
 			@include breakpoint(extra-small) {
+				background-position: center center;
+			}
+			@include breakpoint(extra-xs-small) {
 				background-position: center center;
 			}
 		}
@@ -38,6 +45,10 @@ footer {
 			}
 		@include breakpoint(extra-small) {
 			padding-top: 43px;
+			text-align: center;
+		}
+		@include breakpoint(extra-xs-small) {
+			padding-top: 8px;
 			text-align: center;
 		}
 	}
