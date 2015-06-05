@@ -1,62 +1,6 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7212,6 +7156,12 @@ body.homepage .container-background {
 }
 
 .button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+.button.button-social {
   height: 38px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -7220,16 +7170,16 @@ body.homepage .container-background {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35);
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button {
+  .button.button-social {
     height: 61px;
   }
 }
 @media (max-width: 544px) {
-  .button {
+  .button.button-social {
     height: 70px;
   }
 }
-.button .icon-general {
+.button.button-social .icon-general {
   width: 20%;
   height: 100%;
   line-height: 35px;
@@ -7250,59 +7200,59 @@ body.homepage .container-background {
   transition-duration: 400ms;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button .icon-general {
+  .button.button-social .icon-general {
     height: 61px;
     line-height: 61px;
   }
 }
 @media (max-width: 544px) {
-  .button .icon-general {
+  .button.button-social .icon-general {
     width: 27%;
     height: 70px;
     line-height: 70px;
   }
 }
-.button .icon-general.icon-first {
+.button.button-social .icon-general.icon-first {
   background-color: #08a1df;
   border: 1px solid #287fbe;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button .icon-general.icon-first .icon-tw {
+  .button.button-social .icon-general.icon-first .icon-tw {
     width: 42px;
     height: 34px;
   }
 }
-.button .icon-general.icon-second {
+.button.button-social .icon-general.icon-second {
   background-color: #395490;
   border: 1px solid #253c6f;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button .icon-general.icon-second .icon-fc {
+  .button.button-social .icon-general.icon-second .icon-fc {
     width: 20px;
     height: 37px;
   }
 }
-.button .icon-general.icon-third {
+.button.button-social .icon-general.icon-third {
   background-color: #d05340;
   border: 1px solid #aa1828;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button .icon-general.icon-third .icon-google {
+  .button.button-social .icon-general.icon-third .icon-google {
     width: 22px;
     height: 40px;
   }
 }
-.button .icon-general.icon-forth {
+.button.button-social .icon-general.icon-forth {
   background-color: #3d9de2;
   border: 1px solid #287fbe;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button .icon-general.icon-forth .icon-email {
+  .button.button-social .icon-general.icon-forth .icon-email {
     width: 37px;
     height: 38px;
   }
 }
-.button .text {
+.button.button-social .text {
   display: inline-block;
   width: 80%;
   height: 100%;
@@ -7310,11 +7260,8 @@ body.homepage .container-background {
   border-top: 1px solid #babcbd;
   border-right: 1px solid #babcbd;
   border-bottom: 1px solid #babcbd;
-  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
-  font-weight: 600;
   line-height: 38px;
-  text-align: center;
   text-decoration: none;
   cursor: pointer;
   color: #747575;
@@ -7335,7 +7282,7 @@ body.homepage .container-background {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-.button .text:hover {
+.button.button-social .text:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(100%, rgba(255, 255, 255, 0.25)));
@@ -7345,13 +7292,13 @@ body.homepage .container-background {
   color: #494a4a;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button .text {
+  .button.button-social .text {
     font-size: 20px;
     line-height: 61px;
   }
 }
 @media (max-width: 544px) {
-  .button .text {
+  .button.button-social .text {
     width: 73%;
     font-size: 16px;
     line-height: 30px;
@@ -7520,7 +7467,6 @@ header .nav-color .list ul li:last-child {
 }
 header .nav-color .list ul li a {
   padding: 0px;
-  text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -7671,57 +7617,75 @@ body.homepage .registration .choise {
 }
 body.homepage .registration .sign-in-up {
   display: none;
+  width: 500px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+@media (min-width: 545px) and (max-width: 767px) {
+  body.homepage .registration .sign-in-up {
+    width: 300px;
+  }
+}
+@media (max-width: 544px) {
+  body.homepage .registration .sign-in-up {
+    width: 200px;
+  }
 }
 body.homepage .registration .sign-in-up ul {
   border: none;
 }
-body.homepage .registration .sign-in-up ul li {
+body.homepage .registration .sign-in-up ul .button-sign-email {
   width: 50%;
   height: 100%;
   background-color: #f7f8f8;
   border: 1px solid #d4d4d4;
-  text-align: center;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body.homepage .registration .sign-in-up ul li {
+  body.homepage .registration .sign-in-up ul .button-sign-email {
     width: 100%;
   }
-  body.homepage .registration .sign-in-up ul li:last-child {
+  body.homepage .registration .sign-in-up ul .button-sign-email:last-child {
     margin-top: 20px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .sign-in-up ul li {
+  body.homepage .registration .sign-in-up ul .button-sign-email {
     width: 100%;
   }
-  body.homepage .registration .sign-in-up ul li:last-child {
+  body.homepage .registration .sign-in-up ul .button-sign-email:last-child {
     margin-top: 20px;
   }
 }
-body.homepage .registration .sign-in-up ul li a {
+@media (max-width: 544px) {
+  body.homepage .registration .sign-in-up ul .button-sign-email {
+    width: 100%;
+  }
+  body.homepage .registration .sign-in-up ul .button-sign-email:last-child {
+    margin-top: 20px;
+  }
+}
+body.homepage .registration .sign-in-up ul .button-sign-email a {
   height: 100%;
   padding: 0;
   background-color: transparent;
   border: none;
-  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  font-weight: 600;
   line-height: 59px;
   color: #6c6c6c;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body.homepage .registration .sign-in-up ul li a {
+  body.homepage .registration .sign-in-up ul .button-sign-email a {
     font-size: 20px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .sign-in-up ul li a {
+  body.homepage .registration .sign-in-up ul .button-sign-email a {
     font-size: 20px;
   }
 }
-body.homepage .registration .sign-in-up ul .active {
+body.homepage .registration .sign-in-up ul .button-sign-email.active {
   background-color: #4da1e0;
   border: 1px solid #287fbe;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
@@ -7733,29 +7697,33 @@ body.homepage .registration .sign-in-up ul .active {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
 }
-body.homepage .registration .sign-in-up ul .active a {
+body.homepage .registration .sign-in-up ul .button-sign-email.active a {
   color: #ffffff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
 }
-body.homepage .registration .sign-in-up ul .sign-up {
+body.homepage .registration .sign-in-up ul .button-sign-email.sign-up {
   -moz-border-radius: 3px 0 0 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px 0 0 3px;
 }
-body.homepage .registration .sign-in-up ul .sign-in {
+body.homepage .registration .sign-in-up ul .button-sign-email.sign-in {
   -moz-border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0;
   border-radius: 0 3px 3px 0;
 }
 body.homepage .registration .sign-in-up form {
-  padding-top: 30px;
+  padding-top: 19px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body.homepage .registration .sign-in-up form .form-group {
+  margin-bottom: 0;
+}
 body.homepage .registration .sign-in-up form input {
   width: 100%;
   height: 40px;
+  margin-top: 10px;
   padding-left: 9px;
   background-color: #f7f8f8;
   border: 1px solid #d4d4d4;
@@ -7812,33 +7780,58 @@ body.homepage .registration .sign-in-up form input:-ms-input-placeholder {
   color: #061b2a;
 }
 body.homepage .registration .sign-in-up form .glyph {
+  top: 0px;
   height: 40px;
+  font-size: 18px;
   line-height: 40px;
 }
 body.homepage .registration .sign-in-up form .glyph-passw {
+  top: 11px;
   right: 15px;
   color: #a0d271;
 }
 body.homepage .registration .sign-in-up form .glyph-passw-repeat {
+  top: 11px;
   right: 15px;
   color: #ff5958;
 }
-body.homepage .registration .sign-in-up form .button-back {
+body.homepage .registration .sign-in-up form button {
+  height: 58px;
+  margin-top: 40px;
+  outline: none;
+  font-size: 15px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.homepage .registration .sign-in-up form button {
+    float: none;
+    font-size: 20px;
+  }
+}
+@media (min-width: 545px) and (max-width: 767px) {
+  body.homepage .registration .sign-in-up form button {
+    float: none;
+    font-size: 20px;
+  }
+}
+@media (max-width: 544px) {
+  body.homepage .registration .sign-in-up form button {
+    float: none;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+body.homepage .registration .sign-in-up form button.button-back {
   float: left;
   width: 50%;
-  height: 58px;
   border: 1px solid #d4d4d4;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 15px;
   color: #696a6a;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   text-shadow: 0 1px 0px rgba(255, 255, 255, 0.75);
   text-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.15)));
@@ -7846,50 +7839,22 @@ body.homepage .registration .sign-in-up form .button-back {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  body.homepage .registration .sign-in-up form .button-back {
-    float: none;
-    font-size: 20px;
-  }
-}
-@media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .sign-in-up form .button-back {
-    float: none;
-    font-size: 20px;
-  }
-}
-body.homepage .registration .sign-in-up form .button-sign-up {
+body.homepage .registration .sign-in-up form button.button-sign-up {
   float: right;
   width: 100%;
-  height: 58px;
   background-color: #4da1e0;
   border: 1px solid #287fbe;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 15px;
   color: #ffffff;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 0px 0 rgba(255, 255, 255, 0.35) inset;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4MDgwODAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(128, 128, 128, 0.1)));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  body.homepage .registration .sign-in-up form .button-sign-up {
-    font-size: 20px;
-  }
-}
-@media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .sign-in-up form .button-sign-up {
-    font-size: 20px;
-  }
 }
 body.homepage .registration .getting {
   margin-top: 19px;
@@ -7943,41 +7908,41 @@ body.homepage .registration .getting span {
     margin-top: 33px;
   }
 }
-body.homepage .registration .social .button:before, body.homepage .registration .social .button:after {
+body.homepage .registration .social .button-social:before, body.homepage .registration .social .button-social:after {
   content: " ";
   display: table;
 }
-body.homepage .registration .social .button:after {
+body.homepage .registration .social .button-social:after {
   clear: both;
 }
-body.homepage .registration .social .button:first-child {
+body.homepage .registration .social .button-social:first-child {
   margin: 0px auto 11px;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .social .button:first-child {
+  body.homepage .registration .social .button-social:first-child {
     margin: 0px auto 17px;
   }
 }
-body.homepage .registration .social .button:nth-child(2) {
+body.homepage .registration .social .button-social:nth-child(2) {
   margin: 0px auto 11px;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .social .button:nth-child(2) {
+  body.homepage .registration .social .button-social:nth-child(2) {
     margin: 0px auto 17px;
   }
 }
-body.homepage .registration .social .button:nth-child(3) {
+body.homepage .registration .social .button-social:nth-child(3) {
   margin: 0px auto 13px;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .social .button:nth-child(3) {
+  body.homepage .registration .social .button-social:nth-child(3) {
     margin: 0px auto 17px;
   }
 }
-body.homepage .registration .social .button .icon-general {
+body.homepage .registration .social .button-social .icon-general {
   float: left;
 }
-body.homepage .registration .social .button .text {
+body.homepage .registration .social .button-social .text {
   float: right;
 }
 body.homepage .registration .led {
@@ -8187,7 +8152,7 @@ body.homepage .tweets {
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .tweets {
     padding-top: 56px;
-    padding-bottom: 83px;
+    padding-bottom: 56px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
@@ -8210,7 +8175,7 @@ body.homepage .tweets {
 body.homepage .tweets h2 {
   margin-top: 12px;
   font-size: 24px;
-  line-height: 16px;
+  line-height: 18px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .tweets h2 {
@@ -8266,7 +8231,6 @@ body.homepage .tweets figure figcaption p {
   font-weight: 400;
   line-height: 16px;
   text-align: left;
-  word-wrap: break-word;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .tweets figure figcaption p {
@@ -8449,43 +8413,39 @@ body.homepage .tour .container-wave .wave {
   background-position: 0px 62x;
 }
 @media (min-width: 1200px) {
-  body.homepage .tour .button-tour {
+  body.homepage .tour .take-tour {
     margin: 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  body.homepage .tour .button-tour {
+  body.homepage .tour .take-tour {
     margin: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body.homepage .tour .button-tour {
+  body.homepage .tour .take-tour {
     padding-top: 26px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .tour .button-tour {
+  body.homepage .tour .take-tour {
     padding-top: 51px;
   }
 }
 @media (max-width: 544px) {
-  body.homepage .tour .button-tour {
+  body.homepage .tour .take-tour {
     padding-top: 17px;
   }
 }
-body.homepage .tour .button-tour .take-tour {
+body.homepage .tour .take-tour .button-tour {
   display: inline-block;
   width: 100%;
   height: 100%;
   margin-bottom: 0;
   background-color: #ffffff;
   border: 1px solid #babcbd;
-  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-  font-weight: 600;
   line-height: 56px;
-  text-align: center;
-  text-decoration: none;
   color: #494a4a;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -8504,7 +8464,7 @@ body.homepage .tour .button-tour .take-tour {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-body.homepage .tour .button-tour .take-tour:hover {
+body.homepage .tour .take-tour .button-tour:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(100%, rgba(255, 255, 255, 0.25)));
@@ -8514,13 +8474,13 @@ body.homepage .tour .button-tour .take-tour:hover {
   color: #353737;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body.homepage .tour .button-tour .take-tour {
+  body.homepage .tour .take-tour .button-tour {
     line-height: 74px;
     font-size: 30px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .tour .button-tour .take-tour {
+  body.homepage .tour .take-tour .button-tour {
     line-height: 113px;
     font-size: 30px;
   }
