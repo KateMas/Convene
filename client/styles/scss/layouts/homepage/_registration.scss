@@ -223,8 +223,7 @@
 		@include breakpoint(extra-xs-small) {
 			margin-top: 33px;
 		}
-		.button-social {
-			@include clearfix;
+		.button-soc {
 			&:first-child {
 				margin: 0px auto 11px;
 				@include breakpoint(extra-small) {

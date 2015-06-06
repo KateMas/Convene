@@ -14,6 +14,7 @@ header {
 		border:none;
 		@include clearfix;
 		.nav-button {
+			padding-right: 0;
 			.but-style {
 				width: 102px;
 				height: 120px;
@@ -139,6 +140,9 @@ header {
 							color: #ffffff;
 						}
 						&:hover {
+							color: #1769a4;
+						}
+						&:focus {
 							color: #1769a4;
 						}
 					}
