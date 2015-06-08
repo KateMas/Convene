@@ -1,0 +1,30 @@
+input[type=text], [type=email], [type=password] {
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	padding-left: 9px;
+	background-color: #f7f8f8;
+	border:1px solid #d4d4d4;
+	outline: none;
+	line-height: 40px;
+	@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
+	@include border-radius(3px);
+	@include transition-property(all);
+	@include transition-duration (400ms);
+	&:focus {
+		background-color: #eeeeee;
+		border:1px solid #d4d4d4;
+		outline: none;
+		color: #575555;
+		@include box-shadow (none);
+		@include placeholder {
+			color: transparent;
+		}
+	}
+	@include placeholder {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 13px;
+		color: #061b2a;
+	}
+}

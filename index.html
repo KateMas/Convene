@@ -40,11 +40,11 @@
 			<div class="sign-in-up">
 				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="button button-sign-email active sign-up">
-							<a href="#sign-up" aria-controls="sign-up" role="tab" data-toggle="tab">Sign Up with Email</a>
+						<li role="presentation" class="active sign-up">
+							<a href="#sign-up" aria-controls="sign-up" role="tab" data-toggle="tab" class="button button-form button-sign-email">Sign Up with Email</a>
 						</li>
-						<li role="presentation" class="button button button-sign-email sign-in">
-							<a href="#sign-in" aria-controls="sign-in" role="tab" data-toggle="tab">Sign In with Email</a>
+						<li role="presentation" class="sign-in">
+							<a href="#sign-in" aria-controls="sign-in" role="tab" data-toggle="tab" class="button button-form button-sign-email">Sign In with Email</a>
 						</li>
 					</ul>
 					<div class="tab-content">
@@ -65,13 +65,13 @@
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
 										<input type="password" placeholder="Repeat Password" name="Password" class="form-control" required>
-										<span class="glyphicon glyphicon-remove-sign form-control-feedback glyph glyph-passw-repeat" aria-hidden="true"></span>
+										<span data-container="body" data-toggle="popover" data-placement="right" data-content="When using popovers on elements within a .btn-group or an .input-group, you'll have to specify the option container: 'body' (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered)." class="glyphicon glyphicon-remove-sign form-control-feedback glyph glyph-passw-repeat" aria-hidden="true"></span>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
-										<button class="button button-back">Back</button>
+										<button class="button button-form button-back">Back</button>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
-										<button class="button button-sign-up">Sign Up</button>
+										<button class="button button-form button-sign-in-up">Sign Up</button>
 									</div>
 								</div>
 							</form>
@@ -90,10 +90,10 @@
 								</div>
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
-										<button class="button button-back">Back</button>
+										<button class="button button-form button-back">Back</button>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
-										<button class="button button-sign-up">Sign In</button>
+										<button class="button button-form button-sign-in-up">Sign In</button>
 									</div>
 								</div>
 							</form>
@@ -106,36 +106,11 @@
 					<h2 class='getting'><span>Getting</span><span>things</span><span>done</span><span>together</span><br/><span>has</span><span>never</span><span>been</span><span>so</span><span>easy!</span></h2>
 				</div>
 				<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 social">
-					<!-- <a href="https://twitter.com" class="button button-social">
-					   <div class="icon-general icon-first">
-					   		<img class="icon-tw" src="client/images/social/twitter.png" alt="/"/>
-					   </div>
-					   <p class="text">Use your Twitter Account</p>
-					</a> -->
-					<!-- <div class="button button-social">
-					   <div class="icon-general icon-second">
-					   		<img class="icon-fc" src="client/images/social/fc.png" alt="/"/>
-					   </div>
-					   <a href="https://www.facebook.com/" class="text">Use your Facebook Account</a>
-					</div> -->
-					<a href="https://twitter.com" class="button button-soc button-tw">Use your Twitter Account</a>
-					<a href="https://www.facebook.com" class="button button-soc button-fc">Use your Facebook Account</a>
-					<a href="https://plus.google.com/" class="button button-soc button-google">Use your Google+ Sign In</a>
+					<a href="https://twitter.com" class="button button-general button-soc button-tw">Use your Twitter Account</a>
+					<a href="https://www.facebook.com" class="button button-general button-soc button-fc">Use your Facebook Account</a>
+					<a href="https://plus.google.com/" class="button button-general button-soc button-google">Use your Google+ Sign In</a>
 					<p class="choise">or you can</p>
-					<a href="javascript:void(0)" class="button button-soc button-email">Use your Email Address</a>
-					<!-- <div class="button button-social">
-					   <div class="icon-general icon-third">
-					   		<img class="icon-google" src="client/images/social/google.png" alt="/"/>
-					   </div>
-					   <a href="https://plus.google.com/" class="text">Use your Google+ Sign In</a>
-					</div> -->
-					<!-- <p class="choise">or you can</p> -->
-					<!-- <div class="button button-social">
-					   <div class="icon-general icon-forth">
-					   		<img class="icon-email" src="client/images/social/at.png" alt="/"/>
-					   </div>
-					   <a href="javascript:void(0)" class="text">Use your Email Address</a>
-					</div> -->
+					<a href="javascript:void(0)" class="button button-general button-soc button-email">Use your Email Address</a>
 				</div>
 			</div>
 			<div class="row">
@@ -277,8 +252,8 @@
 					<div class="col-lg2 col-md-2 hidden-sm hidden-xs container-wave">
 						<div class="wave"></div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 button take-tour">
-						<a href="javascript:void(0)" class="button-tour">Take the Tour</a>
+					<div class="col-lg-3 col-md-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 take-tour">
+						<a href="javascript:void(0)" class="button button-general button-tour">Take the Tour</a>
 					</div>
 				</div>
 			</div>
@@ -293,6 +268,9 @@
 				<p>All rights reserved © 2013</p>
 			</div>
 		</div>
+		<div class="bs-example bs-example-padded-bottom">
+		    <button type="button" class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Click to toggle popover</button>
+		  </div>
 	</footer>
 </body>
 </html>

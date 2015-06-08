@@ -5,7 +5,7 @@
 // Reset and dependencies
 @import "bootstrap/normalize";
 //@import "bootstrap/print";
-//@import "bootstrap/glyphicons";
+@import "bootstrap/glyphicons";
 
 // Base
 //@import "base";
@@ -48,7 +48,7 @@
 // Components w/ JavaScript
 @import "js/modals";
 //@import "js/tooltip";
-//@import "js/popovers";
+@import "js/popovers";
 //@import "js/carousel";
 
 // Utility classes

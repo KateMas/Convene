@@ -66,34 +66,5 @@
 		@include breakpoint(extra-xs-small) {
 			padding-top: 17px;
 		}
-		.button-tour {
-			display: inline-block;
-			width: 100%;
-			height: 100%;
-			margin-bottom: 0;
-			background-color: #ffffff;
-			border:1px solid #babcbd;
-			font-size: 15px;
-			line-height: 56px;
-			color: #494a4a;
-			@include border-radius(5px);
-			@include text-shadow (0 1px 2px rgba(#ffffff,0.75));
-			@include box-shadow (0 2px 0px 0 rgba(#ffffff,0.35) inset);
-			@include background-image(linear-gradient(bottom, rgba(0,0,0,0.15) 0%,rgba(255,255,255,0.15) 100%));
-			@include transition-property(all);
-			@include transition-duration(400ms);
-			&:hover {
-				@include background-image(linear-gradient(bottom, rgba(0,0,0,0.25) 0%,rgba(255,255,255,0.25) 100%));
-					color: #353737;
-			}
-			@include breakpoint(small) {
-				line-height: 74px;
-				font-size: 30px;
-			}
-			@include breakpoint(extra-small) {
-				line-height: 113px;
-				font-size: 30px;
-			}
-		}
 	}
 }

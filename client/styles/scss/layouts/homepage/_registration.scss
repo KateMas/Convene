@@ -11,173 +11,161 @@
 	@include breakpoint(extra-xs-small) {
 		padding-top: 0;
 	}
-	.choise {
-		margin: 0 0 11px;
-		font-family: 'Open Sans', sans-serif;
-		font-size: 13px;
-		font-weight: 600;
-		color:#55a4da;
-		@include breakpoint(extra-small) {
-			margin: 0 0 17px;
-			font-size: 20px;
-		}
-	}
 	.sign-in-up {
-		display: none;
+		//display: none;
 		width: 500px;
 		margin: auto;
 		padding-bottom: 40px;
-		@include breakpoint(extra-small) {
+		@include breakpoint(small) {
 			width: 300px;
+		}
+		@include breakpoint(extra-small) {
+			width: 400px;
 		}
 		@include breakpoint(extra-xs-small) {
 			width: 200px;
 		}
 		ul {
 			border:none;
-			.button-sign-email {
+			li {
 				width: 50%;
 				height: 100%;
 				background-color: #f7f8f8;
 				border:1px solid #d4d4d4;
-				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
 				@include breakpoint(small) {
 					width: 100%;
 					&:last-child {
-						margin-top:20px;
+						margin-top: 0;
 					}
 				}
 				@include breakpoint(extra-small) {
 					width: 100%;
 					&:last-child {
-						margin-top:20px;
+						margin-top: 0;
 					}
 				}
 				@include breakpoint(extra-xs-small) {
 					width: 100%;
 					&:last-child {
-						margin-top:20px;
-					}
-				}
-				a {
-					height: 100%;
-					padding: 0;
-					background-color: transparent;
-					border:none;
-					font-size: 18px;
-					line-height: 59px;
-					color: #6c6c6c;
-					@include breakpoint(small) {
-						font-size: 20px;
-					}
-					@include breakpoint(extra-small) {
-						font-size: 20px;
+						margin-top: 0;
 					}
 				}
 				&.active {
 					background-color: #4da1e0;
 					border: 1px solid #287fbe;
-					@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
+					 @include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0 0 rgba(#ffffff,0.35) inset);
 					@include background-image(linear-gradient(top, rgba(#000000,0.1) 0%,rgba(#808080,0.1) 100%));
-					a {
+					.button-sign-email {
+						background-color: transparent;
+						border: none;
 						color: #ffffff;
 						@include text-shadow (0 1px 2px rgba(#000000,0.75));
 					}
 				}
 				&.sign-up {
 					@include border-radius(3px 0 0 3px);
+					@include breakpoint(small) {
+						@include border-radius(3px 3px 0 0);
+					}
+					@include breakpoint(extra-small) {
+						@include border-radius(3px 3px 0 0);
+					}
+					@include breakpoint(extra-xs-small) {
+						@include border-radius(3px 3px 0 0);
+					}
 				}
 				&.sign-in {
 					@include border-radius(0 3px 3px 0);
+					@include breakpoint(small) {
+						@include border-radius(0 0 3px 3px);
+					}
+					@include breakpoint(extra-small) {
+						@include border-radius(3px 3px 0 0);
+					}
+					@include breakpoint(extra-xs-small) {
+						@include border-radius(3px 3px 0 0);
+					}
 				}
 			}
 		}
 		form {
 			padding-top: 19px;
 			@include box-sizing(border-box);
+			@include breakpoint(small) {
+				padding-top: 10px;
+			}
+			@include breakpoint(extra-small) {
+				padding-top: 10px;
+			}
+			@include breakpoint(extra-xs-small) {
+				padding-top: 10px;
+			}
 			.form-group {
 				margin-bottom: 0;
 			}
 			input {
-				width: 100%;
-				height: 40px;
 				margin-top: 10px;
-				padding-left: 9px;
-				background-color: #f7f8f8;
-				border:1px solid #d4d4d4;
-				outline: none;
-				line-height: 40px;
-				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
-				@include border-radius(3px);
-				@include transition-property(all);
-				@include transition-duration (400ms);
-				&:focus {
-					background-color: #98d1fa;
-					color: #256ea3;
-					@include placeholder {
-						color: transparent;
-					}
-				}
-				@include placeholder {
-					font-family: 'Open Sans', sans-serif;
-					font-weight: 600;
-					font-size: 13px;
-					color: #061b2a;
-				}
 			}
 			.glyph {
 				top: 0px;
 				height: 40px;
 				font-size: 18px;
 				line-height: 40px;
+				@include breakpoint(extra-xs-small) {
+					top: 1px;
+				}
 			}
 			.glyph-passw {
 				top: 11px;
 				right: 15px;
 				color: #a0d271;
+				@include breakpoint(extra-xs-small) {
+					top: 10px;
+				}
 			}
 			.glyph-passw-repeat {
 				top: 11px;
 				right: 15px;
 				color: #ff5958;
+				@include breakpoint(extra-xs-small) {
+					top: 10px;
+				}
 			}
 			button {
-				height: 58px;
 				margin-top: 40px;
-				outline: none;
-				font-size: 15px;
-				@include box-shadow (0 1px 1px 0 rgba(#000000,0.12), 0 1px 0px 0 rgba(#ffffff,0.35) inset);
+				@include clearfix;
 				@include breakpoint(small) {
-					float: none;
-					font-size: 20px;
+					margin-top: 20px;
 				}
 				@include breakpoint(extra-small) {
-					float: none;
-					font-size: 20px;
+					margin-top: 20px;
 				}
 				@include breakpoint(extra-xs-small) {
-					float: none;
 					margin-top: 20px;
-					font-size: 20px;
 				}
 				&.button-back {
 					float: left;
-					width: 50%;
-					border:1px solid #d4d4d4;
-					color: #696a6a;
-					@include border-radius(3px);
-					@include text-shadow (0 1px 0px 0 rgba(#ffffff,0.75));
-					@include background-image(linear-gradient(top, rgba(#ffffff,0.15) 0%,rgba(#000000,0.15) 100%));
+					@include breakpoint(small) {
+						float: none;
+					}
+					@include breakpoint(extra-small) {
+						float: none;
+					}
+					@include breakpoint(extra-xs-small) {
+						float: none;
+					}
 				}
-				&.button-sign-up {
+				&.button-sign-in-up {
 					float: right;
-					width: 100%;
-					background-color: #4da1e0;
-					border: 1px solid #287fbe;
-					color: #ffffff;
-					@include border-radius(3px);
-					@include text-shadow (0 1px 2px rgba(#000000,0.45));
-					@include background-image(linear-gradient(top, rgba(#000000,0.1) 0%,rgba(#808080,0.1) 100%));
+					@include breakpoint(small) {
+						float: none;
+					}
+					@include breakpoint(extra-small) {
+						float: none;
+					}
+					@include breakpoint(extra-xs-small) {
+						float: none;
+					}
 				}
 			}
 		}
@@ -227,19 +215,19 @@
 			&:first-child {
 				margin: 0px auto 11px;
 				@include breakpoint(extra-small) {
-					margin: 0px auto 17px;
+					margin: 0px auto 21px;
 				}
 			}
 			&:nth-child(2) {
 				margin: 0px auto 11px;
 				@include breakpoint(extra-small) {
-					margin: 0px auto 17px;
+					margin: 0px auto 19px;
 				}
 			}
 			&:nth-child(3) {
 				margin: 0px auto 13px;
 				@include breakpoint(extra-small) {
-					margin: 0px auto 17px;
+					margin: 0px auto 20px;
 				}
 			}
 			.icon-general {
@@ -247,6 +235,17 @@
 			}
 			.text {
 				float: right;
+			}
+		}
+		.choise {
+			margin: 0 0 11px;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 13px;
+			font-weight: 600;
+			color:#55a4da;
+			@include breakpoint(extra-small) {
+				margin: 0 0 17px;
+				font-size: 20px;
 			}
 		}
 	}
