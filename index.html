@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="client/styles/css/index.css">
 	<script src="client/js/jquery-2.1.3.min.js"></script>
     <script src="client/js/bootstrap.min.js"></script>
+    <script src="client/js/index.js"></script>
 </head>
 <body class="homepage">
 	<div class="container-background">
@@ -51,21 +52,21 @@
 					    <div role="tabpanel" class="tab-pane active" id="sign-up">
 					    	<form action="/">
 								<div class="form-group has-feedback">
-									<input type="text" placeholder="Your Name" name="Firstname" class="form-control">
-									<span class="glyphicon glyphicon-question-sign form-control-feedback glyph" aria-hidden="true"></span>
+									<input type="text" placeholder="Your Name" name="Firstname" class="form-control" required>
+									<span class="glyphicon glyphicon-question-sign form-control-feedback glyph-name" aria-hidden="true"></span>
 								</div>
 								<div class="form-group has-feedback">
 									<input type="email" placeholder="Email Address" name="Email" class="form-control" required>
-									<span class="glyphicon glyphicon-question-sign form-control-feedback glyph" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-question-sign form-control-feedback glyph-name" aria-hidden="true"></span>
 								</div>
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
 										<input type="password" placeholder="Password" name="Password" class="form-control" required>
-										<span class="glyphicon glyphicon-ok-sign form-control-feedback glyph glyph-passw" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-ok form-control-feedback glyph glyph-passw" aria-hidden="true"></span>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
-										<input type="password" placeholder="Repeat Password" name="Password" class="form-control" required>
-										<span data-container="body" data-toggle="popover" data-placement="right" data-content="When using popovers on elements within a .btn-group or an .input-group, you'll have to specify the option container: 'body' (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered)." class="glyphicon glyphicon-remove-sign form-control-feedback glyph glyph-passw-repeat" aria-hidden="true"></span>
+										<input type="password" placeholder="Repeat Password" name="Password" class="form-control" required/>
+										<span type="button" data-container="body" data-toggle="popover" data-placement="left" data-content="Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero" class="glyphicon glyphicon-remove form-control-feedback glyph glyph-passw-repeat" aria-hidden="true"></span>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
 										<button class="button button-form button-back">Back</button>
@@ -80,12 +81,12 @@
 					    	<form action="/" method="post">
 								<div class="form-group has-feedback">
 									<input type="email" placeholder="Email Address" name="Email" class="form-control" required>
-									<span class="glyphicon glyphicon-question-sign form-control-feedback glyph" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-question-sign form-control-feedback glyph-name" aria-hidden="true"></span>
 								</div>
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
 										<input type="email" placeholder="Password" name="Password" class="form-control" required>
-										<span class="glyphicon glyphicon-ok-sign form-control-feedback glyph glyph-passw" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-ok form-control-feedback glyph glyph-passw" aria-hidden="true"></span>
 									</div>
 								</div>
 								<div class="row">
@@ -160,7 +161,9 @@
 				<div class="row first-line">
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-left">
 									<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
@@ -170,7 +173,9 @@
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-left">
 									<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
@@ -180,7 +185,9 @@
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-left">
 									<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
@@ -190,7 +197,9 @@
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-left">
 									<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
@@ -202,7 +211,9 @@
 				<div class="row second-line">
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-xs">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-right">
 									<p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
@@ -212,7 +223,9 @@
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-xs">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-right">
 									<p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur odio a commodo. In</p>
@@ -222,7 +235,9 @@
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 hidden-xs">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-right">
 									<p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero</p>
@@ -232,7 +247,9 @@
 					</figure>
 					<figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 hidden-xs">
 						<div class="row">
-							<img src="client/images/tweets/photo.png" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="/"/>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<img src="client/images/tweets/photo.png"  alt="/"/>
+							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 								<figcaption class="block arrow-right">
 									<p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in</p>
@@ -268,9 +285,6 @@
 				<p>All rights reserved © 2013</p>
 			</div>
 		</div>
-		<div class="bs-example bs-example-padded-bottom">
-		    <button type="button" class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Click to toggle popover</button>
-		  </div>
 	</footer>
 </body>
 </html>

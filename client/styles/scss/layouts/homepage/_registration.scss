@@ -15,7 +15,9 @@
 		//display: none;
 		width: 500px;
 		margin: auto;
+		padding-top: 61px;
 		padding-bottom: 40px;
+		@include user-select(none);
 		@include breakpoint(small) {
 			width: 300px;
 		}
@@ -24,6 +26,8 @@
 		}
 		@include breakpoint(extra-xs-small) {
 			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
 		ul {
 			border:none;
@@ -106,29 +110,62 @@
 			input {
 				margin-top: 10px;
 			}
-			.glyph {
-				top: 0px;
-				height: 40px;
-				font-size: 18px;
-				line-height: 40px;
-				@include breakpoint(extra-xs-small) {
-					top: 1px;
+			span {
+				pointer-events:auto;
+				@include border-radius(50%);
+				&.glyph {
+					top: 22px;
+					right: 22px;
+					width: 18px;
+					height: 18px;
+					&:before {
+						position: absolute;
+						right: 3px;
+						font-size: 11px;
+						color: #f7f8f8;
+					}
+					&.glyph-passw {
+						background-color: #a0d271;
+						&:before {
+							top: -8px;
+						}
+					}
+					&.glyph-passw-repeat {
+						background-color: #ff5958;
+						&:before {
+							top: -7px;
+							height: 0;
+						}
+					}
 				}
-			}
-			.glyph-passw {
-				top: 11px;
-				right: 15px;
-				color: #a0d271;
-				@include breakpoint(extra-xs-small) {
-					top: 10px;
-				}
-			}
-			.glyph-passw-repeat {
-				top: 11px;
-				right: 15px;
-				color: #ff5958;
-				@include breakpoint(extra-xs-small) {
-					top: 10px;
+				&.glyph-name {
+					top: 13px;
+					right: 9px;
+					width: 14px;
+					height: 14px;
+					background-color: #7e7e7e;
+					&::before {
+						position: absolute;
+						top: -10px;
+						right: -2px;
+						display: inline-block;
+						width: 17px;
+						height: 17px;
+						font-size: 17px;
+						color: #f7f8f8;
+						@include border-radius(50%);
+					}
+					&::after {
+						position: absolute;
+						top: -2px;
+						right: -2px;
+						display: inline-block;
+						width: 18px;
+						height: 18px;
+						border: 1px solid #d5d5d5;
+						content: "";
+						@include border-radius(50%);
+					}
 				}
 			}
 			button {
