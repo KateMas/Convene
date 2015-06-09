@@ -71,11 +71,12 @@ header {
 		}
 		.list {
 			float: right;
-			margin-right: 98px;
+			margin-right: 113px;
 			text-align: center;
 			border: none;
 			@include clearfix;
 			@include breakpoint(medium) {
+				margin-right: 95px;
 				margin-left: 200px;
 			}
 			@include breakpoint(extra-small) {
