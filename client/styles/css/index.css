@@ -7783,6 +7783,7 @@ body.homepage .registration {
   }
 }
 body.homepage .registration .sign-in-up {
+  display: none;
   width: 500px;
   margin: auto;
   padding-top: 61px;
