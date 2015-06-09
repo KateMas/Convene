@@ -5863,6 +5863,7 @@ body.homepage .registration .getting span {
   padding-right: 10px;
   padding-left: 10px;
   background: #1769a4;
+  letter-spacing: -1px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .registration .social {
