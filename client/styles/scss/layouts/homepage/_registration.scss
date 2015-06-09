@@ -113,16 +113,21 @@
 			span {
 				pointer-events:auto;
 				@include border-radius(50%);
+				&:before {
+					position: absolute;
+				}
 				&.glyph {
 					top: 22px;
 					right: 22px;
 					width: 18px;
 					height: 18px;
 					&:before {
-						position: absolute;
 						right: 3px;
 						font-size: 11px;
 						color: #f7f8f8;
+						@include breakpoint(extra-xs-small) {
+							right: 18%;
+						}
 					}
 					&.glyph-passw {
 						background-color: #a0d271;
@@ -144,27 +149,25 @@
 					width: 14px;
 					height: 14px;
 					background-color: #7e7e7e;
-					&::before {
-						position: absolute;
-						top: -10px;
-						right: -2px;
+					&:before, &:after {
 						display: inline-block;
+						right: -2px;
+						@include border-radius(50%);
+					}
+					&::before {
+						top: -10px;
 						width: 17px;
 						height: 17px;
 						font-size: 17px;
 						color: #f7f8f8;
-						@include border-radius(50%);
 					}
 					&::after {
 						position: absolute;
 						top: -2px;
-						right: -2px;
-						display: inline-block;
 						width: 18px;
 						height: 18px;
 						border: 1px solid #d5d5d5;
 						content: "";
-						@include border-radius(50%);
 					}
 				}
 			}

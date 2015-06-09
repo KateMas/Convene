@@ -4898,7 +4898,6 @@ tbody.collapse.in {
     display: none !important;
   }
 }
-/* @include font-face("Helvetica Light", font-files("../../../client/fonts/helvetica-light/Helvetica-Light-Light.otf","../../../client/fonts/helvetica-light/Helvetica-Light-Light.svg","../../../client/fonts/helvetica-light/Helvetica-Light-Light.ttf","../../../client/fonts/helvetica-light/Helvetica-Light-Light.woff")); */
 @font-face {
   font-family: "Helvetica Regular";
   src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot?1427357100') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg?1427357100') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf?1427357100') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff?1427357100') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2?1427357100') format('woff2');
@@ -4906,6 +4905,10 @@ tbody.collapse.in {
 @font-face {
   font-family: "Helvetica Light";
   src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light.otf?1421217996') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-light-webfont.ttf?1430386506') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.eot?1426390760') format('embedded-opentype'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.svg?1426390760') format('svg'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.ttf?1426390760') format('truetype'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.woff?1426390760') format('woff'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.woff2?1426390760') format('woff2');
 }
 body.homepage .container-background {
   background-image: url(../../../client/images/bg-header-monitor.png);
@@ -5708,6 +5711,9 @@ body.homepage .registration .sign-in-up form span {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+body.homepage .registration .sign-in-up form span:before {
+  position: absolute;
+}
 body.homepage .registration .sign-in-up form span.glyph {
   top: 22px;
   right: 22px;
@@ -5715,10 +5721,14 @@ body.homepage .registration .sign-in-up form span.glyph {
   height: 18px;
 }
 body.homepage .registration .sign-in-up form span.glyph:before {
-  position: absolute;
   right: 3px;
   font-size: 11px;
   color: #f7f8f8;
+}
+@media (max-width: 544px) {
+  body.homepage .registration .sign-in-up form span.glyph:before {
+    right: 18%;
+  }
 }
 body.homepage .registration .sign-in-up form span.glyph.glyph-passw {
   background-color: #a0d271;
@@ -5740,31 +5750,27 @@ body.homepage .registration .sign-in-up form span.glyph-name {
   height: 14px;
   background-color: #7e7e7e;
 }
-body.homepage .registration .sign-in-up form span.glyph-name::before {
-  position: absolute;
-  top: -10px;
-  right: -2px;
+body.homepage .registration .sign-in-up form span.glyph-name:before, body.homepage .registration .sign-in-up form span.glyph-name:after {
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  font-size: 17px;
-  color: #f7f8f8;
+  right: -2px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+body.homepage .registration .sign-in-up form span.glyph-name::before {
+  top: -10px;
+  width: 17px;
+  height: 17px;
+  font-size: 17px;
+  color: #f7f8f8;
+}
 body.homepage .registration .sign-in-up form span.glyph-name::after {
   position: absolute;
   top: -2px;
-  right: -2px;
-  display: inline-block;
   width: 18px;
   height: 18px;
   border: 1px solid #d5d5d5;
   content: "";
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
 }
 body.homepage .registration .sign-in-up form button {
   margin-top: 40px;
