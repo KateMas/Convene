@@ -40,15 +40,15 @@ footer {
 		text-align: right;
 		color: #494a4a;
 		@include breakpoint(small) {
-			padding-top: 47px;
+			margin-top: 47px;
 			text-align: center;
 			}
 		@include breakpoint(extra-small) {
-			padding-top: 43px;
+			margin-top: 43px;
 			text-align: center;
 		}
 		@include breakpoint(extra-xs-small) {
-			padding-top: 8px;
+			margin-top: 8px;
 			text-align: center;
 		}
 	}

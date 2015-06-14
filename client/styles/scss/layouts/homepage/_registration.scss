@@ -36,6 +36,9 @@
 				height: 100%;
 				background-color: #f7f8f8;
 				border:1px solid #d4d4d4;
+				a {
+					margin-right: 0;
+				}
 				@include breakpoint(small) {
 					width: 100%;
 					&:last-child {
@@ -113,61 +116,46 @@
 			span {
 				pointer-events:auto;
 				@include border-radius(50%);
-				&:before {
-					position: absolute;
-				}
 				&.glyph {
-					top: 22px;
-					right: 22px;
+					top: 21px;
+					right: 23px;
 					width: 18px;
 					height: 18px;
+					font-size: 12px;
+					line-height: 18px;
 					&:before {
-						right: 3px;
-						font-size: 11px;
+						display: inline-block;
+						padding-left: 1px;
 						color: #f7f8f8;
-						@include breakpoint(extra-xs-small) {
-							right: 18%;
-						}
 					}
 					&.glyph-passw {
 						background-color: #a0d271;
-						&:before {
-							top: -8px;
-						}
 					}
 					&.glyph-passw-repeat {
 						background-color: #ff5958;
-						&:before {
-							top: -7px;
-							height: 0;
-						}
 					}
 				}
 				&.glyph-name {
 					top: 13px;
-					right: 9px;
+					right: 11px;
 					width: 14px;
 					height: 14px;
 					background-color: #7e7e7e;
-					&:before, &:after {
-						display: inline-block;
-						right: -2px;
-						@include border-radius(50%);
-					}
+					font-size: 17px;
+					line-height: 14px;
 					&::before {
-						top: -10px;
-						width: 17px;
-						height: 17px;
-						font-size: 17px;
 						color: #f7f8f8;
 					}
 					&::after {
 						position: absolute;
 						top: -2px;
+						right: -3px;
+						display: inline-block;
 						width: 18px;
 						height: 18px;
 						border: 1px solid #d5d5d5;
 						content: "";
+						@include border-radius(50%);
 					}
 				}
 			}
@@ -216,7 +204,6 @@
 		font-size: 44px;
 		line-height: 52px;
 		text-align: left;
-		letter-spacing: -3px;
 		color: #ffffff;
 		@include breakpoint(small) {
 			line-height: 47px;
@@ -239,7 +226,10 @@
 		 	padding-right: 10px;
 		 	padding-left: 10px;
 			background: #1769a4;
-			letter-spacing: -1px;
+			letter-spacing: -3px;
+			@include breakpoint(extra-xs-small) {
+				letter-spacing: -1px;
+			}
 		}
 	}
 	.social {
@@ -279,14 +269,41 @@
 			}
 		}
 		.choise {
+			display: inline-block;
 			margin: 0 0 11px;
+			padding: 0 4px;
 			font-family: 'Open Sans', sans-serif;
 			font-size: 13px;
 			font-weight: 600;
 			color:#55a4da;
 			@include breakpoint(extra-small) {
+				width: 40%;
 				margin: 0 0 17px;
 				font-size: 20px;
+			}
+			@include breakpoint(extra-xs-small) {
+				width: 45%;
+			}
+		}
+		hr {
+			display: inline-block;
+			width: 86px;
+			margin: 0;
+			border: 1px dashed #f3f2ee;
+			vertical-align: middle;
+			@include breakpoint(medium) {
+				width: 63px;
+			}
+			@include breakpoint(small) {
+				width: 129px;
+			}
+			@include breakpoint(extra-small) {
+				width: 25%;
+				vertical-align: super;
+			}
+			@include breakpoint(extra-xs-small) {
+				width: 20%;
+				vertical-align: super;
 			}
 		}
 	}

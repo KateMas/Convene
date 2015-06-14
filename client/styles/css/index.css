@@ -4900,18 +4900,18 @@ tbody.collapse.in {
 }
 @font-face {
   font-family: "Helvetica Regular";
-  src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot?1427357100') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg?1427357100') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf?1427357100') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff?1427357100') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2?1427357100') format('woff2');
+  src: url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff') format('woff'), url('../fonts/../../../client/fonts/helvetica-regular/helvetica-regular-webfont.woff2') format('woff2');
 }
 @font-face {
   font-family: "Helvetica Light";
-  src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light.otf?1421217996') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-light-webfont.ttf?1430386506') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.woff') format('woff');
+  src: url('../fonts/../../../client/fonts/helvetica-light/Helvetica-Light.otf') format('opentype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.svg') format('svg'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-light-webfont.ttf') format('truetype'), url('../fonts/../../../client/fonts/helvetica-light/helvetica-Light-webfont.woff') format('woff');
 }
 @font-face {
   font-family: "Glyphicons Halflings";
-  src: url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.eot?1426390760') format('embedded-opentype'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.svg?1426390760') format('svg'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.ttf?1426390760') format('truetype'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.woff?1426390760') format('woff'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.woff2?1426390760') format('woff2');
+  src: url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.svg') format('svg'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/../../../client/fonts/glyphicons-halflings/glyphicons-halflings-regular.woff2') format('woff2');
 }
 body.homepage .container-background {
-  background-image: url(../../../client/images/bg-header-monitor.png);
+  background-image: url(../../../client/images/bg-header-registration.png);
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -4931,6 +4931,7 @@ body.homepage .container-background {
 }
 
 .button-general {
+  display: inline-block;
   width: 100%;
   background-color: #ffffff;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.75);
@@ -4956,7 +4957,7 @@ body.homepage .container-background {
 }
 .button-general.button-soc {
   position: relative;
-  display: inline-block;
+  height: 38px;
   padding-left: 20%;
   font-size: 13px;
   line-height: 36px;
@@ -4974,6 +4975,11 @@ body.homepage .container-background {
     height: 58px;
     font-size: 21px;
     line-height: 63px;
+  }
+}
+@media (max-width: 544px) {
+  .button-general.button-soc {
+    height: 100%;
   }
 }
 .button-general.button-soc:before {
@@ -5004,7 +5010,10 @@ body.homepage .container-background {
 }
 @media (max-width: 544px) {
   .button-general.button-soc:before {
-    height: 103%;
+    height: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
   }
 }
 .button-general.button-soc.button-tw:before {
@@ -5021,6 +5030,11 @@ body.homepage .container-background {
 @media (min-width: 992px) and (max-width: 1199px) {
   .button-general.button-soc.button-fc {
     line-height: 18px;
+  }
+}
+@media (min-width: 545px) and (max-width: 767px) {
+  .button-general.button-soc.button-fc {
+    letter-spacing: -1px;
   }
 }
 .button-general.button-soc.button-fc:before {
@@ -5057,7 +5071,6 @@ body.homepage .container-background {
   }
 }
 .button-general.button-tour {
-  display: inline-block;
   height: 100%;
   margin-bottom: 0;
   border: 1px solid #babcbd;
@@ -5343,7 +5356,11 @@ header .nav-color .list:after {
 @media (min-width: 992px) and (max-width: 1199px) {
   header .nav-color .list {
     margin-right: 95px;
-    margin-left: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .nav-color .list {
+    margin-right: 76px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
@@ -5494,19 +5511,19 @@ footer p {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   footer p {
-    padding-top: 47px;
+    margin-top: 47px;
     text-align: center;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
   footer p {
-    padding-top: 43px;
+    margin-top: 43px;
     text-align: center;
   }
 }
 @media (max-width: 544px) {
   footer p {
-    padding-top: 8px;
+    margin-top: 8px;
     text-align: center;
   }
 }
@@ -5583,6 +5600,9 @@ body.homepage .registration .sign-in-up ul li {
   height: 100%;
   background-color: #f7f8f8;
   border: 1px solid #d4d4d4;
+}
+body.homepage .registration .sign-in-up ul li a {
+  margin-right: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .registration .sign-in-up ul li {
@@ -5711,66 +5731,49 @@ body.homepage .registration .sign-in-up form span {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-body.homepage .registration .sign-in-up form span:before {
-  position: absolute;
-}
 body.homepage .registration .sign-in-up form span.glyph {
-  top: 22px;
-  right: 22px;
+  top: 21px;
+  right: 23px;
   width: 18px;
   height: 18px;
+  font-size: 12px;
+  line-height: 18px;
 }
 body.homepage .registration .sign-in-up form span.glyph:before {
-  right: 3px;
-  font-size: 11px;
+  display: inline-block;
+  padding-left: 1px;
   color: #f7f8f8;
-}
-@media (max-width: 544px) {
-  body.homepage .registration .sign-in-up form span.glyph:before {
-    right: 18%;
-  }
 }
 body.homepage .registration .sign-in-up form span.glyph.glyph-passw {
   background-color: #a0d271;
 }
-body.homepage .registration .sign-in-up form span.glyph.glyph-passw:before {
-  top: -8px;
-}
 body.homepage .registration .sign-in-up form span.glyph.glyph-passw-repeat {
   background-color: #ff5958;
 }
-body.homepage .registration .sign-in-up form span.glyph.glyph-passw-repeat:before {
-  top: -7px;
-  height: 0;
-}
 body.homepage .registration .sign-in-up form span.glyph-name {
   top: 13px;
-  right: 9px;
+  right: 11px;
   width: 14px;
   height: 14px;
   background-color: #7e7e7e;
-}
-body.homepage .registration .sign-in-up form span.glyph-name:before, body.homepage .registration .sign-in-up form span.glyph-name:after {
-  display: inline-block;
-  right: -2px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  font-size: 17px;
+  line-height: 14px;
 }
 body.homepage .registration .sign-in-up form span.glyph-name::before {
-  top: -10px;
-  width: 17px;
-  height: 17px;
-  font-size: 17px;
   color: #f7f8f8;
 }
 body.homepage .registration .sign-in-up form span.glyph-name::after {
   position: absolute;
   top: -2px;
+  right: -3px;
+  display: inline-block;
   width: 18px;
   height: 18px;
   border: 1px solid #d5d5d5;
   content: "";
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 body.homepage .registration .sign-in-up form button {
   margin-top: 40px;
@@ -5839,7 +5842,6 @@ body.homepage .registration .getting {
   font-size: 44px;
   line-height: 52px;
   text-align: left;
-  letter-spacing: -3px;
   color: #ffffff;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5869,7 +5871,12 @@ body.homepage .registration .getting span {
   padding-right: 10px;
   padding-left: 10px;
   background: #1769a4;
-  letter-spacing: -1px;
+  letter-spacing: -3px;
+}
+@media (max-width: 544px) {
+  body.homepage .registration .getting span {
+    letter-spacing: -1px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .registration .social {
@@ -5917,7 +5924,9 @@ body.homepage .registration .social .button-soc .text {
   float: right;
 }
 body.homepage .registration .social .choise {
+  display: inline-block;
   margin: 0 0 11px;
+  padding: 0 4px;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -5925,8 +5934,43 @@ body.homepage .registration .social .choise {
 }
 @media (min-width: 545px) and (max-width: 767px) {
   body.homepage .registration .social .choise {
+    width: 40%;
     margin: 0 0 17px;
     font-size: 20px;
+  }
+}
+@media (max-width: 544px) {
+  body.homepage .registration .social .choise {
+    width: 45%;
+  }
+}
+body.homepage .registration .social hr {
+  display: inline-block;
+  width: 86px;
+  margin: 0;
+  border: 1px dashed #f3f2ee;
+  vertical-align: middle;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body.homepage .registration .social hr {
+    width: 63px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.homepage .registration .social hr {
+    width: 129px;
+  }
+}
+@media (min-width: 545px) and (max-width: 767px) {
+  body.homepage .registration .social hr {
+    width: 25%;
+    vertical-align: super;
+  }
+}
+@media (max-width: 544px) {
+  body.homepage .registration .social hr {
+    width: 20%;
+    vertical-align: super;
   }
 }
 body.homepage .registration .led {
@@ -6262,7 +6306,7 @@ body.homepage .tweets .first-line figure {
     margin-top: 36px;
   }
 }
-body.homepage .tweets .first-line figure img {
+body.homepage .tweets .first-line figure .tweets-photo {
   float: left;
 }
 body.homepage .tweets .first-line figure figcaption {
@@ -6300,7 +6344,7 @@ body.homepage .tweets .first-line figure .arrow-left::after {
 body.homepage .tweets .second-line figure {
   margin-top: 32px;
 }
-body.homepage .tweets .second-line figure img {
+body.homepage .tweets .second-line figure .tweets-photo {
   float: right;
 }
 body.homepage .tweets .second-line figure figcaption {

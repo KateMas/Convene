@@ -101,7 +101,7 @@
 			@include breakpoint(extra-small) {
 				margin-top: 36px;
 			}
-			img {
+			.tweets-photo {
 				float: left;
 			}
 			figcaption{
@@ -137,7 +137,7 @@
 	.second-line {
 		figure {
 			margin-top: 32px;
-			img {
+			.tweets-photo {
 				float: right;
 			}
 			figcaption{
