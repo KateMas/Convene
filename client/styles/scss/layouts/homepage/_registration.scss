@@ -139,16 +139,22 @@
 				&.glyph-name {
 					top: 13px;
 					right: 11px;
-					width: 14px;
+					width: 12px;
 					height: 14px;
 					background-color: #7e7e7e;
 					font-size: 17px;
 					line-height: 14px;
+					&::before, &::after {
+						position: absolute;
+					}
 					&::before {
+						top: 0;
+						right: -3px;
+						width: 17px;
+						height: 17px;
 						color: #f7f8f8;
 					}
 					&::after {
-						position: absolute;
 						top: -2px;
 						right: -3px;
 						display: inline-block;
@@ -243,7 +249,7 @@
 		@include breakpoint(extra-xs-small) {
 			margin-top: 33px;
 		}
-		.button-soc {
+		.button-social {
 			&:first-child {
 				margin: 0px auto 11px;
 				@include breakpoint(extra-small) {

@@ -4918,22 +4918,21 @@ body.homepage .container-background {
 }
 
 .button {
+  display: inline-block;
+  width: 100%;
+  background-color: #ffffff;
+  outline: none;
   font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
   font-weight: 600;
   text-align: center;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-}
-.button:hover {
-  text-decoration: none;
-}
-
-.button-general {
-  display: inline-block;
-  width: 100%;
-  background-color: #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
   text-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35), 0 2px 0 0 rgba(255, 255, 255, 0.35) inset;
@@ -4945,7 +4944,8 @@ body.homepage .container-background {
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
 }
-.button-general:hover {
+.button:hover {
+  text-decoration: none;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(100%, rgba(255, 255, 255, 0.25)));
@@ -4953,10 +4953,10 @@ body.homepage .container-background {
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
 }
-.button-general:focus {
+.button:focus {
   text-decoration: none;
 }
-.button-general.button-soc {
+.button.button-social {
   position: relative;
   height: 38px;
   padding-left: 20%;
@@ -4968,22 +4968,22 @@ body.homepage .container-background {
   -webkit-border-radius: 3px;
   border-radius: 3px 3px 3px 4px;
 }
-.button-general.button-soc:hover {
+.button.button-social:hover {
   color: #494a4a;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-soc {
+  .button.button-social {
     height: 58px;
     font-size: 21px;
     line-height: 63px;
   }
 }
 @media (max-width: 544px) {
-  .button-general.button-soc {
+  .button.button-social {
     height: 100%;
   }
 }
-.button-general.button-soc:before {
+.button.button-social:before {
   position: absolute;
   top: -1px;
   left: 0;
@@ -5005,123 +5005,95 @@ body.homepage .container-background {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-soc:before {
+  .button.button-social:before {
     height: 58px;
   }
 }
 @media (max-width: 544px) {
-  .button-general.button-soc:before {
+  .button.button-social:before {
     height: 100%;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
   }
 }
-.button-general.button-soc.button-tw:before {
+.button.button-social.button-tw:before {
   background-image: url(../../../client/images/social/twitter.png);
   background-size: 26px 21px;
   background-color: #08a1df;
   border: 1px solid #287fbe;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-soc.button-tw:before {
+  .button.button-social.button-tw:before {
     background-size: 41px 31px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .button-general.button-soc.button-fc {
+  .button.button-social.button-fc {
     line-height: 18px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-soc.button-fc {
+  .button.button-social.button-fc {
     letter-spacing: -1px;
   }
 }
-.button-general.button-soc.button-fc:before {
+.button.button-social.button-fc:before {
   background-image: url(../../../client/images/social/fc.png);
   background-size: 13px 24px;
   background-color: #395490;
   border: 1px solid #253c6f;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-soc.button-fc:before {
+  .button.button-social.button-fc:before {
     background-size: 20px 37px;
   }
 }
-.button-general.button-soc.button-google:before {
+.button.button-social.button-google:before {
   background-image: url(../../../client/images/social/google.png);
   background-size: 14px 26px;
   background-color: #d05340;
   border: 1px solid #aa1828;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-soc.button-google:before {
+  .button.button-social.button-google:before {
     background-size: 22px 39px;
   }
 }
-.button-general.button-soc.button-email:before {
+.button.button-social.button-email:before {
   background-image: url(../../../client/images/social/at.png);
   background-size: 24px 24px;
   background-color: #3d9de2;
   border: 1px solid #287fbe;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-soc.button-email:before {
+  .button.button-social.button-email:before {
     background-size: 40px 39px;
   }
 }
-.button-general.button-tour {
+.button.button-tour {
   height: 100%;
   margin-bottom: 0;
   border: 1px solid #babcbd;
-  font-size: 15px;
   line-height: 56px;
   color: #494a4a;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
 }
-.button-general.button-tour:hover {
+.button.button-tour:hover {
   color: #353737;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .button-general.button-tour {
+  .button.button-tour {
     line-height: 74px;
     font-size: 30px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  .button-general.button-tour {
+  .button.button-tour {
     line-height: 113px;
     font-size: 30px;
   }
 }
-
-.button-form {
-  height: 58px;
-  outline: none;
-  font-size: 15px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .button-form {
-    font-size: 20px;
-  }
-}
-@media (min-width: 545px) and (max-width: 767px) {
-  .button-form {
-    font-size: 20px;
-  }
-}
-@media (max-width: 544px) {
-  .button-form {
-    font-size: 20px;
-  }
-}
-.button-form.button-sign-email {
+.button.button-sign-email {
   height: 100%;
   padding: 0;
   background-color: transparent;
@@ -5131,37 +5103,50 @@ body.homepage .container-background {
   color: #6c6c6c;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 0 0 rgba(255, 255, 255, 0.35) inset;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 0 0 rgba(255, 255, 255, 0.35) inset;
+  text-shadow: none;
+  background-image: none;
 }
-.button-form.button-back {
+@media (min-width: 768px) and (max-width: 991px) {
+  .button.button-sign-email {
+    font-size: 20px;
+  }
+}
+@media (min-width: 545px) and (max-width: 767px) {
+  .button.button-sign-email {
+    font-size: 20px;
+  }
+}
+@media (max-width: 544px) {
+  .button.button-sign-email {
+    font-size: 20px;
+  }
+}
+.button.button-back {
   width: 50%;
+  height: 58px;
   border: 1px solid #babcbd;
   color: #696a6a;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-  text-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35), 0 2px 0 0 rgba(255, 255, 255, 0.35) inset;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35), 0 2px 0 0 rgba(255, 255, 255, 0.35) inset;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.15)), color-stop(100%, rgba(255, 255, 255, 0.15)));
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
 }
-.button-form.button-back:hover {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(100%, rgba(255, 255, 255, 0.25)));
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
+@media (min-width: 768px) and (max-width: 991px) {
+  .button.button-back {
+    font-size: 20px;
+  }
 }
-.button-form.button-sign-in-up {
-  width: 100%;
+@media (min-width: 545px) and (max-width: 767px) {
+  .button.button-back {
+    font-size: 20px;
+  }
+}
+@media (max-width: 544px) {
+  .button.button-back {
+    font-size: 20px;
+  }
+}
+.button.button-sign-in-up {
+  height: 58px;
   background-color: #4da1e0;
   border: 1px solid #287fbe;
   color: #ffffff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-  text-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.45);
   -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.08), 0 2px 0 0 rgba(255, 255, 255, 0.35) inset;
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.08), 0 2px 0 0 rgba(255, 255, 255, 0.35) inset;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4MDgwODAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
@@ -5171,13 +5156,28 @@ body.homepage .container-background {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(128, 128, 128, 0.1) 100%);
 }
-.button-form.button-sign-in-up:hover {
+.button.button-sign-in-up:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4MDgwODAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(128, 128, 128, 0.2)));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(128, 128, 128, 0.2) 100%);
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(128, 128, 128, 0.2) 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(128, 128, 128, 0.2) 100%);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .button.button-sign-in-up {
+    font-size: 20px;
+  }
+}
+@media (min-width: 545px) and (max-width: 767px) {
+  .button.button-sign-in-up {
+    font-size: 20px;
+  }
+}
+@media (max-width: 544px) {
+  .button.button-sign-in-up {
+    font-size: 20px;
+  }
 }
 
 input[type=text], [type=email], [type=password] {
@@ -5759,17 +5759,23 @@ body.homepage .registration .sign-in-up form span.glyph.glyph-passw-repeat {
 body.homepage .registration .sign-in-up form span.glyph-name {
   top: 13px;
   right: 11px;
-  width: 14px;
+  width: 12px;
   height: 14px;
   background-color: #7e7e7e;
   font-size: 17px;
   line-height: 14px;
 }
+body.homepage .registration .sign-in-up form span.glyph-name::before, body.homepage .registration .sign-in-up form span.glyph-name::after {
+  position: absolute;
+}
 body.homepage .registration .sign-in-up form span.glyph-name::before {
+  top: 0;
+  right: -3px;
+  width: 17px;
+  height: 17px;
   color: #f7f8f8;
 }
 body.homepage .registration .sign-in-up form span.glyph-name::after {
-  position: absolute;
   top: -2px;
   right: -3px;
   display: inline-block;
@@ -5899,34 +5905,34 @@ body.homepage .registration .getting span {
     margin-top: 33px;
   }
 }
-body.homepage .registration .social .button-soc:first-child {
+body.homepage .registration .social .button-social:first-child {
   margin: 0px auto 11px;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .social .button-soc:first-child {
+  body.homepage .registration .social .button-social:first-child {
     margin: 0px auto 21px;
   }
 }
-body.homepage .registration .social .button-soc:nth-child(2) {
+body.homepage .registration .social .button-social:nth-child(2) {
   margin: 0px auto 11px;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .social .button-soc:nth-child(2) {
+  body.homepage .registration .social .button-social:nth-child(2) {
     margin: 0px auto 19px;
   }
 }
-body.homepage .registration .social .button-soc:nth-child(3) {
+body.homepage .registration .social .button-social:nth-child(3) {
   margin: 0px auto 13px;
 }
 @media (min-width: 545px) and (max-width: 767px) {
-  body.homepage .registration .social .button-soc:nth-child(3) {
+  body.homepage .registration .social .button-social:nth-child(3) {
     margin: 0px auto 20px;
   }
 }
-body.homepage .registration .social .button-soc .icon-general {
+body.homepage .registration .social .button-social .icon-general {
   float: left;
 }
-body.homepage .registration .social .button-soc .text {
+body.homepage .registration .social .button-social .text {
   float: right;
 }
 body.homepage .registration .social .choise {
