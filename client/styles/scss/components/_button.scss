@@ -130,6 +130,7 @@
 		border:1px solid #babcbd;
 		line-height: 56px;
 		color: #494a4a;
+		@include border-radius (5px);
 		&:hover {
 				color: #353737;
 		}

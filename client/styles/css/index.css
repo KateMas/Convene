@@ -5091,6 +5091,9 @@ body.homepage .container-background {
   border: 1px solid #babcbd;
   line-height: 56px;
   color: #494a4a;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .button.button-tour:hover {
   color: #353737;
