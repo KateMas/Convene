@@ -1,5 +1,5 @@
 .events {
-	padding-top: 107px;
+	padding-top: 108px;
 	padding-bottom: 158px;
 	background-color: #39a6f1;
 	background-image: url(../../../client/images/events/shape-events.png);
@@ -31,7 +31,7 @@
 	}
 	.description {
 		width: 882px;
-		margin: 71px auto 0;
+		margin: 61px auto 0;
 		@include breakpoint(small) {
 			width: auto;
 			margin-top: 40px;
