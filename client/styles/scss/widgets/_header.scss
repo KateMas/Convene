@@ -72,8 +72,8 @@ header {
 		.list {
 			float: right;
 			margin-right: 113px;
-			text-align: center;
 			border: none;
+			text-align: center;
 			@include clearfix;
 			@include breakpoint(medium) {
 				margin-right: 95px;

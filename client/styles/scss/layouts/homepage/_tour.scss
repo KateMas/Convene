@@ -29,13 +29,13 @@
 		}
 		@include breakpoint(extra-small) {
 			font-size: 48px;
-			text-align: center;
 			line-height: 58px;
+			text-align: center;
 			letter-spacing: normal;
 		}
 		@include breakpoint(extra-xs-small) {
-			text-align: center;
 			line-height: 32px;
+			text-align: center;
 			letter-spacing: normal;
 		}
 	}

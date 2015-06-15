@@ -4960,9 +4960,9 @@ body.homepage .container-background {
   position: relative;
   height: 38px;
   padding-left: 20%;
+  border: 1px solid #babcbd;
   font-size: 13px;
   line-height: 36px;
-  border: 1px solid #babcbd;
   color: #747575;
   -moz-border-radius: 3px 3px 3px 4px;
   -webkit-border-radius: 3px;
@@ -4987,11 +4987,11 @@ body.homepage .container-background {
   position: absolute;
   top: -1px;
   left: 0;
-  content: "";
   width: 20%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  content: "";
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -5073,14 +5073,14 @@ body.homepage .container-background {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .button.button-tour {
-    line-height: 74px;
     font-size: 30px;
+    line-height: 74px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
   .button.button-tour {
-    line-height: 113px;
     font-size: 30px;
+    line-height: 113px;
   }
 }
 .button.button-sign-email {
@@ -5332,8 +5332,8 @@ header .nav-color .nav-button .logo-header {
 header .nav-color .list {
   float: right;
   margin-right: 113px;
-  text-align: center;
   border: none;
+  text-align: center;
 }
 header .nav-color .list:before, header .nav-color .list:after {
   content: " ";
@@ -5849,24 +5849,24 @@ body.homepage .registration .getting {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.homepage .registration .getting {
+    font-size: 40px;
     line-height: 47px;
     text-align: center;
-    font-size: 40px;
   }
 }
 @media (min-width: 545px) and (max-width: 767px) {
   body.homepage .registration .getting {
     margin-top: 11px;
+    font-size: 40px;
     line-height: 47px;
     text-align: center;
-    font-size: 40px;
   }
 }
 @media (max-width: 544px) {
   body.homepage .registration .getting {
+    font-size: 32px;
     line-height: 37px;
     text-align: center;
-    font-size: 32px;
   }
 }
 body.homepage .registration .getting span {
@@ -6079,7 +6079,7 @@ body.homepage .events .description figure:first-child {
 }
 @media (max-width: 544px) {
   body.homepage .events .description figure:first-child {
-    width: 100%;
+    width: 90%;
     margin-right: 0;
   }
 }
@@ -6102,7 +6102,7 @@ body.homepage .events .description figure:nth-child(2) {
 }
 @media (max-width: 544px) {
   body.homepage .events .description figure:nth-child(2) {
-    width: 100%;
+    width: 90%;
     margin-top: 37px;
     margin-right: 0;
   }
@@ -6127,7 +6127,7 @@ body.homepage .events .description figure:last-child {
 }
 @media (max-width: 544px) {
   body.homepage .events .description figure:last-child {
-    width: 100%;
+    width: 90%;
     margin-top: 37px;
   }
 }
@@ -6228,12 +6228,31 @@ body.homepage .tweets figure:before, body.homepage .tweets figure:after {
 body.homepage .tweets figure:after {
   clear: both;
 }
-body.homepage .tweets figure img {
+body.homepage .tweets figure .image {
+  position: relative;
+}
+body.homepage .tweets figure .image::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35) inset;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35) inset;
+}
+body.homepage .tweets figure .image img {
   width: 100%;
   -webkit-box-shadow: 0 2px 1px 0 #0f456c;
   box-shadow: 0 2px 1px 0 #0f456c;
 }
 body.homepage .tweets figure figcaption {
+  position: relative;
+  display: inline-block;
   height: 108px;
   background-color: #ffffff;
   color: #676767;
@@ -6258,6 +6277,12 @@ body.homepage .tweets figure figcaption {
   body.homepage .tweets figure figcaption {
     height: 143px;
   }
+}
+body.homepage .tweets figure figcaption::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: ' ';
 }
 body.homepage .tweets figure figcaption p {
   margin: 0;
@@ -6285,16 +6310,6 @@ body.homepage .tweets figure figcaption p {
   body.homepage .tweets figure figcaption p {
     padding: 12px 3px 12px 9px;
   }
-}
-body.homepage .tweets figure .block {
-  position: relative;
-  display: inline-block;
-}
-body.homepage .tweets figure .block::after {
-  width: 0;
-  height: 0;
-  content: ' ';
-  position: absolute;
 }
 @media (min-width: 545px) and (max-width: 767px) {
   body.homepage .tweets .first-line {
@@ -6425,15 +6440,15 @@ body.homepage .tour h2 {
 @media (min-width: 545px) and (max-width: 767px) {
   body.homepage .tour h2 {
     font-size: 48px;
-    text-align: center;
     line-height: 58px;
+    text-align: center;
     letter-spacing: normal;
   }
 }
 @media (max-width: 544px) {
   body.homepage .tour h2 {
-    text-align: center;
     line-height: 32px;
+    text-align: center;
     letter-spacing: normal;
   }
 }

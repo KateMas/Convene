@@ -213,20 +213,20 @@
 		text-align: left;
 		color: #ffffff;
 		@include breakpoint(small) {
+			font-size: 40px;
 			line-height: 47px;
 			text-align: center;
-			font-size: 40px;
 		}
 		@include breakpoint(extra-small) {
 			margin-top: 11px;
+			font-size: 40px;
 			line-height: 47px;
 			text-align: center;
-			font-size: 40px;
 		}
 		@include breakpoint(extra-xs-small) {
+			font-size: 32px;
 			line-height: 37px;
 			text-align: center;
-			font-size: 32px;
 		}
 		 span {
 		 	display: inline-block;
